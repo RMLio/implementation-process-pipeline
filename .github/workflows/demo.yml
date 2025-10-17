@@ -32,8 +32,6 @@ jobs:
         run: echo "Generating Excel template."
       - name: Create output directory
         run: mkdir -p output
-      - name: Create docs directory
-        run: mkdir -p docs
       - name: "[Placeholder] Generate RDF"
         run: echo "Putting dummy data in output directory" && curl -L https://work.de-meester.org/assets/2025/output.ttl -o output/data.ttl
       - uses: EndBug/add-and-commit@v9
@@ -54,8 +52,10 @@ jobs:
           npm i
           node scripts/select-config.cjs demo
           npm run build
+      - name: Clean docs directory
+        run: rm -rf docs && mkdir docs
       - name: Move Miravi dist directory to docs
-        run: mv miravi-a-linked-data-viewer/main/dist docs
+        run: mv miravi-a-linked-data-viewer/main/dist/* docs
       - uses: EndBug/add-and-commit@v9
         with:
           add: docs
