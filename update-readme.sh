@@ -7,7 +7,7 @@ if [[ -f "$BACKUP_FILE" ]]; then
   echo "$FILE is already updated."
 else
   echo "Updating $FILE."
-  cat $FILE | sed "s/{{AP-URL}}/$1/g" | sed "s/{{SHACL-URL}}/$2/g" > temp.md
+  sed -e "s@{{AP-URL}}@$1@g" -e "s@{{SHACL-URL}}@$2@g" $FILE > temp.md
   cp $FILE $BACKUP_FILE
   mv temp.md $FILE
 fi
