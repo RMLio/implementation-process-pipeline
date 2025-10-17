@@ -34,4 +34,7 @@ jobs:
         run: mkdir -p output
       - name: "[Placeholder] Generate RDF"
         run: echo "Putting dummy data in output directory" && curl -L https://work.de-meester.org/assets/2025/output.ttl -o output/data.ttl
-
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: output/data.ttl
+          message: "Add generated RDF"
