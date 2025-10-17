@@ -32,9 +32,30 @@ jobs:
         run: echo "Generating Excel template."
       - name: Create output directory
         run: mkdir -p output
+      - name: Create docs directory
+        run: mkdir -p docs
       - name: "[Placeholder] Generate RDF"
         run: echo "Putting dummy data in output directory" && curl -L https://work.de-meester.org/assets/2025/output.ttl -o output/data.ttl
       - uses: EndBug/add-and-commit@v9
         with:
           add: output/data.ttl
           message: "Add generated RDF"
+      - name: Clone Miravi repository
+        uses: actions/checkout@v5
+        with:
+          repository: SolidLabResearch/miravi-a-linked-data-viewer
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      - name: Build Miravi website
+        run: |
+          cd miravi-a-linked-data-viewer
+          npm i
+          node scripts/select-config.cjs demo
+          npm run build
+      - name: Move Miravi dist directory to docs
+        run: mv miravi-a-linked-data-viewer/main/dist docs
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: docs
+          message: "Add Miravi build"
