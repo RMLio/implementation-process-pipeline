@@ -3,8 +3,8 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 
 env:
-  ap-url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/
-  shacl-url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/shacl/leermiddelen-ap-SHACL.ttl
+  ap_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/
+  shacl_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/shacl/leermiddelen-ap-SHACL.ttl
 
 jobs:
   Explore-GitHub-Actions:
@@ -16,7 +16,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v5
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - run: ./download-shacl.sh $shacl-url
+      - run: ./download-shacl.sh $shacl_url
 
 
 # TODO: Download SHACL from shacl-url if SHACL file doesn't exist yet.
