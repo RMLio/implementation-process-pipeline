@@ -28,3 +28,14 @@ jobs:
         with:
           add: README.md original-README.md
           message: "Add AP and SHACL links to README"
+      - name: "[Placeholder] Generate template Excel"
+        run: echo "Generating Excel template."
+      - name: Create output directory
+        run: mkdir -p output
+      - name: Generate RDF
+        uses: RMLio/rml-action@v1.0.0
+        with:
+          global-pattern: "*.yml"
+          serialization-format: turtle
+          output-directory: output
+

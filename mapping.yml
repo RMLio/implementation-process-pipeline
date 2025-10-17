@@ -1,0 +1,9 @@
+prefixes:
+  ex: "http://example.com/"
+
+mappings:
+  students:
+    sources: ["data/students.csv~csv"]
+    s: ex:{ID}/$(name)
+    po:
+      - [ex:id, $(ID)]
