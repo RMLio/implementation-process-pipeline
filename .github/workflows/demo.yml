@@ -16,7 +16,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v5
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - run: ./run.sh $shacl-url
+      - run: ./download-shacl.sh $shacl-url
 
 
 # TODO: Download SHACL from shacl-url if SHACL file doesn't exist yet.
