@@ -1,0 +1,3531 @@
+@prefix : <http://mapping.example.com/> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix exr: <http://example.org/relation/> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://example.org/Collectie/DT-BC_DKO-gr1> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Basiscompetentie";
+  exr:niveau <http://example.org/Niveau/DKO-gr1>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Basiscompetenties in het deeltijds kunstonderwijs - 1ste graad";
+  skos:notation "DT-BC_DKO-gr1" .
+
+<http://example.org/Collectie/DT-BC_DKO-gr2> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Basiscompetentie";
+  exr:niveau <http://example.org/Niveau/DKO-gr2>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Basiscompetenties in het deeltijds kunstonderwijs - 2de graad";
+  skos:notation "DT-BC_DKO-gr2" .
+
+<http://example.org/Collectie/DT-BC_DKO-gr3> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Basiscompetentie";
+  exr:niveau <http://example.org/Niveau/DKO-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Basiscompetenties en specifieke eindtermen in het deeltijds kunstonderwijs - 3de graad";
+  skos:notation "DT-BC_DKO-gr3" .
+
+<http://example.org/Collectie/DT-BC_SV> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Basiscompetentie";
+  exr:niveau <http://example.org/Niveau/SV-AAV>, <http://example.org/Niveau/SV-AV>,
+    <http://example.org/Niveau/SV-MG>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Basiscompetenties in het secundair volwassenenonderwijs";
+  skos:notation "DT-BC_SV" .
+
+<http://example.org/Collectie/DT-BK_DKO-gr4> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Beroepskwalificatie";
+  exr:niveau <http://example.org/Niveau/DKO-gr4>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Beroepskwalificaties in het deeltijds kunstonderwijs - 4de graad";
+  skos:notation "DT-BK_DKO-gr4" .
+
+<http://example.org/Collectie/DT-BK_S-gr2> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Beroepskwalificatie";
+  exr:niveau <http://example.org/Niveau/S-gr2-AF>, <http://example.org/Niveau/S-gr2-DuF>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:versie-datum "V2_1";
+  rdfs:label "Beroepskwalificaties in het secundair onderwijs - 2de graad";
+  skos:notation "DT-BK_S-gr2" .
+
+<http://example.org/Collectie/DT-BK_S-gr3> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Beroepskwalificatie";
+  exr:niveau <http://example.org/Niveau/S-gr3-AF>, <http://example.org/Niveau/S-gr3-DuF>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:versie-datum "V2_1";
+  rdfs:label "Beroepskwalificaties in het secundair onderwijs - 3de graad";
+  skos:notation "DT-BK_S-gr3" .
+
+<http://example.org/Collectie/DT-BK_S-lj7> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Beroepskwalificatie";
+  exr:niveau <http://example.org/Niveau/S-lj7-AF>, <http://example.org/Niveau/S-lj7-DuF>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Beroepskwalificaties in het secundair onderwijs - 7de leerjaar";
+  skos:notation "DT-BK_S-lj7" .
+
+<http://example.org/Collectie/DT-BK_SV-BO> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Beroepskwalificatie";
+  exr:niveau <http://example.org/Niveau/SV-BO>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Beroepskwalificaties in het secundair volwassenenonderwijs";
+  skos:notation "DT-BK_SV-BO" .
+
+<http://example.org/Collectie/DT-CD_S-gr2> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Cesuurdoel";
+  exr:niveau <http://example.org/Niveau/S-gr2-DoF>, <http://example.org/Niveau/S-gr2-DuF>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:versie-datum "V2_1";
+  rdfs:label "Cesuurdoelen in het secundair onderwijs - 2de graad";
+  skos:notation "DT-CD_S-gr2" .
+
+<http://example.org/Collectie/DT-CD_SV-gr2-AV> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Cesuurdoel";
+  exr:niveau <http://example.org/Niveau/SV-gr2-AV>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Cesuurdoelen in het secundair volwassenenonderwijs - 2de graad - algemene vorming";
+  skos:notation "DT-CD_SV-gr2-AV" .
+
+<http://example.org/Collectie/DT-DSL_H> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Domeinspecifieke leerresultaten ";
+  exr:niveau <http://example.org/Niveau/H>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Domeinspecifieke leerresultaten in het hoger onderwijs";
+  skos:notation "DT-DSL_H" .
+
+<http://example.org/Collectie/DT-ET%26BC_V-B> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Basiscompetentie", "Eindterm";
+  exr:niveau <http://example.org/Niveau/V-B>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Eindtermen en basiscompetenties in het volwassenenonderwijs - basiseducatie";
+  skos:notation "DT-ET&BC_V-B" .
+
+<http://example.org/Collectie/DT-ETBG_S-gr1> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Eindtermen basisgeletterdheid";
+  exr:niveau <http://example.org/Niveau/S-gr1>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:versie-datum "V2_1";
+  rdfs:label "Eindtermen basisgeletterdheid in het secundair onderwijs - 1ste graad";
+  skos:notation "DT-ETBG_S-gr1" .
+
+<http://example.org/Collectie/DT-ET_S-gr1-A> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Eindterm";
+  exr:niveau <http://example.org/Niveau/S-gr1-A>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:versie-datum "V2_1";
+  rdfs:label "Eindtermen in het secundair onderwijs - 1ste graad - A-stroom";
+  skos:notation "DT-ET_S-gr1-A" .
+
+<http://example.org/Collectie/DT-ET_S-gr1-B> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Eindterm";
+  exr:niveau <http://example.org/Niveau/S-gr1-B>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:versie-datum "V2_1";
+  rdfs:label "Eindtermen in het secundair onderwijs - 1ste graad - B-stroom";
+  skos:notation "DT-ET_S-gr1-B" .
+
+<http://example.org/Collectie/DT-ET_S-gr2-AF> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Eindterm";
+  exr:niveau <http://example.org/Niveau/S-gr2-AF>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:versie-datum "V2_1";
+  rdfs:label "Eindtermen in het secundair onderwijs - 2de graad - arbeidsfinaliteit",
+    "Eindtermen in het secundair onderwijs - 3de graad - arbeidsfinaliteit";
+  skos:notation "DT-ET_S-gr2-AF" .
+
+<http://example.org/Collectie/DT-ET_S-gr2-DoF> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Eindterm";
+  exr:niveau <http://example.org/Niveau/S-gr2-DoF>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:versie-datum "V2_1";
+  rdfs:label "Eindtermen in het secundair onderwijs - 2de graad - doorstroomfinaliteit";
+  skos:notation "DT-ET_S-gr2-DoF" .
+
+<http://example.org/Collectie/DT-ET_S-gr2-DuF> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Eindterm";
+  exr:niveau <http://example.org/Niveau/S-gr2-DuF>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:versie-datum "V2_1";
+  rdfs:label "Eindtermen in het secundair onderwijs - 2de graad - dubbele finaliteit";
+  skos:notation "DT-ET_S-gr2-DuF" .
+
+<http://example.org/Collectie/DT-ET_S-gr3-DoF> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Eindterm";
+  exr:niveau <http://example.org/Niveau/S-gr3-DoF>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:versie-datum "V2_1";
+  rdfs:label "Eindtermen in het secundair onderwijs - 3de graad - doorstroomfinaliteit";
+  skos:notation "DT-ET_S-gr3-DoF" .
+
+<http://example.org/Collectie/DT-ET_S-gr3-DuF> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Eindterm";
+  exr:niveau <http://example.org/Niveau/S-gr3-DuF>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:versie-datum "V2_1";
+  rdfs:label "Eindtermen in het secundair onderwijs - 3de graad - dubbele finaliteit";
+  skos:notation "DT-ET_S-gr3-DuF" .
+
+<http://example.org/Collectie/DT-ET_SV-AAV> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Eindterm";
+  exr:niveau <http://example.org/Niveau/SV-AAV>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Eindtermen in het secundair volwassenenonderwijs - aanvullende algemene vorming";
+  skos:notation "DT-ET_SV-AAV" .
+
+<http://example.org/Collectie/DT-ET_SV-gr2-AV> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Eindterm";
+  exr:niveau <http://example.org/Niveau/SV-gr2-AV>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Eindtermen in het secundair volwassenenonderwijs - 2de graad - algemene vorming";
+  skos:notation "DT-ET_SV-gr2-AV" .
+
+<http://example.org/Collectie/DT-ET_SV-gr3-AV> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Eindterm";
+  exr:niveau <http://example.org/Niveau/SV-gr3-AV>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Eindtermen in het secundair volwassenenonderwijs - 3de graad - algemene vorming";
+  skos:notation "DT-ET_SV-gr3-AV" .
+
+<http://example.org/Collectie/DT-MD_BK> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Minimumdoel";
+  exr:niveau <http://example.org/Niveau/BK>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Minimumdoelen in het buitengewoon kleuteronderwijs";
+  skos:notation "DT-MD_BK" .
+
+<http://example.org/Collectie/DT-MD_BL> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Minimumdoel";
+  exr:niveau <http://example.org/Niveau/L>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Minimumdoelen in het buitengewoon lager onderwijs";
+  skos:notation "DT-MD_BL" .
+
+<http://example.org/Collectie/DT-MD_K> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Minimumdoel";
+  exr:niveau <http://example.org/Niveau/K>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Minimumdoelen in het gewoon kleuteronderwijs";
+  skos:notation "DT-MD_K" .
+
+<http://example.org/Collectie/DT-MD_L> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Minimumdoel";
+  exr:niveau <http://example.org/Niveau/L>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Minimumdoelen in het gewoon lager onderwijs";
+  skos:notation "DT-MD_L" .
+
+<http://example.org/Collectie/DT-MD_S-lj7> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Minimumdoel";
+  exr:niveau <http://example.org/Niveau/S-lj7-DoF>, <http://example.org/Niveau/S-lj7-DuF>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Minimumdoelen in het secundair onderwijs - 7de leerjaar";
+  skos:notation "DT-MD_S-lj7" .
+
+<http://example.org/Collectie/DT-OD_BS-OV1> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Ontwikkelingsdoel";
+  exr:niveau <http://example.org/Niveau/BS-OV1>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Ontwikkelingsdoelen in het buitengewoon secundair onderwijs - opleidingsvorm 1";
+  skos:notation "DT-OD_BS-OV1" .
+
+<http://example.org/Collectie/DT-OD_BS-OV3> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Ontwikkelingsdoel";
+  exr:niveau <http://example.org/Niveau/BS-OV3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Ontwikkelingsdoelen in het buitengewoon secundair onderwijs - opleidingsvorm 3";
+  skos:notation "DT-OD_BS-OV3" .
+
+<http://example.org/Collectie/DT-OD_BS-OV4> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Ontwikkelingsdoel";
+  exr:niveau <http://example.org/Niveau/BS-OV4>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Ontwikkelingsdoelen in het buitengewoon secundair onderwijs - opleidingsvorm 4";
+  skos:notation "DT-OD_BS-OV4" .
+
+<http://example.org/Collectie/DT-OD_OKAN> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Ontwikkelingsdoel";
+  exr:niveau <http://example.org/Niveau/OKAN>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Ontwikkelingsdoelen in de onthaalklas voor anderstalige nieuwkomers";
+  skos:notation "DT-OD_OKAN" .
+
+<http://example.org/Collectie/DT-SET_S-gr3> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Specifieke eindterm";
+  exr:niveau <http://example.org/Niveau/S-gr3-DoF>, <http://example.org/Niveau/S-gr3-DuF>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:versie-datum "V2_1";
+  rdfs:label "Specifieke eindtermen in het secundair onderwijs - 3de graad";
+  skos:notation "DT-SET_S-gr3" .
+
+<http://example.org/Collectie/DT-SET_SV-gr3-AV> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Specifieke eindterm";
+  exr:niveau <http://example.org/Niveau/SV-gr3-AV>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Specifieke eindtermen in het secundair volwassenenonderwijs - 3de graad - algemene vorming";
+  skos:notation "DT-SET_SV-gr3-AV" .
+
+<http://example.org/Collectie/DT-SE_DKO-gr4> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Specifieke eindterm";
+  exr:niveau <http://example.org/Niveau/DKO-gr4>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  rdfs:label "Specifieke eindtermen in het deeltijds kunstonderwijs - 4de graad";
+  skos:notation "DT-SE_DKO-gr4" .
+
+<http://example.org/Collectie/DT-UD_S-gr1> a ex:Collectie;
+  exr:collectiedoel "Doeltype";
+  exr:collectiedoeltype "Uitbreidingsdoel";
+  exr:niveau <http://example.org/Niveau/S-gr1>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:versie-datum "V2_1";
+  rdfs:label "Uitbreidingsdoelen in het secundair onderwijs - 1ste graad";
+  skos:notation "DT-UD_S-gr1" .
+
+<http://example.org/Collectie/SC-STEM_S-gr2-DoF> a ex:Collectie;
+  exr:collectiedoel "Sleutelcompetentie";
+  exr:collectiedoeltype "Competenties inzake wiskunde, exacte wetenschappen en technologie";
+  exr:leerplan <http://example.org/Leerplan/GO_S-gr2-DoF>;
+  exr:niveau <http://example.org/Niveau/S-gr2-DoF>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  exr:versie-datum "45688";
+  rdfs:label "2D/BASIS-6";
+  skos:notation "SC-STEM_S-gr2-DoF" .
+
+<http://example.org/Collectie/SR-Nat_S-gr2-DoF> a ex:Collectie;
+  exr:collectiedoel "Studierichting";
+  exr:collectiedoeltype "Natuurwetenschappen";
+  exr:leerplan <http://example.org/Leerplan/GO_S-gr2-DoF>;
+  exr:niveau <http://example.org/Niveau/S-gr2-DoF>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  exr:versie-datum "3.0.0";
+  rdfs:label "II-Nat-d";
+  skos:notation "SR-Nat_S-gr2-DoF" .
+
+<http://example.org/Doel/06.01> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen leggen de invoering van de reële getallen uit als de vervollediging van de reële getallenas.";
+  skos:notation "06.01" .
+
+<http://example.org/Doel/06.02> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen ordenen reële getallen.";
+  skos:notation "06.02" .
+
+<http://example.org/Doel/06.03> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen rekenen met reële getallen.";
+  skos:notation "06.03" .
+
+<http://example.org/Doel/06.04> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen bepalen de onderlinge ligging van twee rechten, twee vlakken en een rechte en een vlak in ruimtelijke situaties.";
+  skos:notation "06.04" .
+
+<http://example.org/Doel/06.05> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen bepalen het effect van schaalverandering op vorm, lengte, oppervlakte en inhoud of volume.";
+  skos:notation "06.05" .
+
+<http://example.org/Doel/06.06> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen passen de stelling van Pythagoras toe om meetkundige problemen op te lossen in het vlak en in de ruimte.";
+  skos:notation "06.06" .
+
+<http://example.org/Doel/06.07> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen gebruiken de goniometrische getallen sinus, cosinus en tangens in rechthoekige driehoeken om meetkundige problemen op te lossen.";
+  skos:notation "06.07" .
+
+<http://example.org/Doel/06.08> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen passen gelijkvormigheidskenmerken van driehoeken toe om meetkundige problemen op te lossen.";
+  skos:notation "06.08" .
+
+<http://example.org/Doel/06.09> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen tekenen in het vlak de som van vectoren en de vermenigvuldiging van een vector met een getal.";
+  skos:notation "06.09" .
+
+<http://example.org/Doel/06.10> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen lossen eerstegraadsvergelijkingen en -ongelijkheden in één onbekende algebraïsch en grafisch op.";
+  skos:notation "06.10" .
+
+<http://example.org/Doel/06.11> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen drukken bij een formule één variabele uit in functie van een andere.";
+  skos:notation "06.11" .
+
+<http://example.org/Doel/06.12> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen leggen uit wat een functie is en leggen het verband tussen verschillende representaties van een functie: verwoording, tabel, grafiek en voorschrift.";
+  skos:notation "06.12" .
+
+<http://example.org/Doel/06.13> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen bepalen het voorschrift, de grafiek, de tabel en de verwoording van een eerstegraadsfunctie als één van de andere representaties gegeven is.";
+  skos:notation "06.13" .
+
+<http://example.org/Doel/06.14> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen analyseren kenmerken van eerstegraadsfuncties: domein, bereik, nulwaarden, tekenverloop en stijgen/dalen.";
+  skos:notation "06.14" .
+
+<http://example.org/Doel/06.15> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen analyseren kenmerken van tweedegraadsfuncties van de vorm f(x)=ax²: domein, bereik, nulwaarden, tekenverloop, stijgen/dalen, extremum, toenemende/afnemende stijging/daling en symmetrie ten opzichte van een verticale rechte.";
+  skos:notation "06.15" .
+
+<http://example.org/Doel/06.16> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen lossen stelsels van twee eerstegraadsvergelijkingen in twee onbekenden algebraïsch en grafisch op.";
+  skos:notation "06.16" .
+
+<http://example.org/Doel/06.17> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen lossen telproblemen op met behulp van boomdiagrammen en venndiagrammen.";
+  skos:notation "06.17" .
+
+<http://example.org/Doel/06.18> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen analyseren statistische gegevens aan de hand van voorstellingswijzen en centrum- en spreidingsmaten.";
+  skos:notation "06.18" .
+
+<http://example.org/Doel/06.19> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen bepalen de waarheidswaarde van logische uitspraken met behulp van waarheidstabellen.";
+  skos:notation "06.19" .
+
+<http://example.org/Doel/06.20> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen beargumenteren wiskundige redeneringen en maken daarbij ook gebruik van eigenschappen of van een tegenvoorbeeld.";
+  skos:notation "06.20" .
+
+<http://example.org/Doel/06.21> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen beschrijven fenomenen uit de realiteit aan de hand van wiskundige concepten uit de tweede graad.";
+  skos:notation "06.21" .
+
+<http://example.org/Doel/06.22> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen lossen vraagstukken en problemen op door te mathematiseren en demathematiseren en door gebruik te maken van heuristieken.";
+  skos:notation "06.22" .
+
+<http://example.org/Doel/06.23> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen gebruiken ICT om berekeningen uit te voeren en grafische voorstellingen te maken.";
+  skos:notation "06.23" .
+
+<http://example.org/Doel/06.24> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen leggen uit hoe plantaardige en dierlijke organismen prikkels ontvangen.";
+  skos:notation "06.24" .
+
+<http://example.org/Doel/06.25> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen leggen uit hoe bij plantaardige en dierlijke organismen een prikkel verwerkt wordt.";
+  skos:notation "06.25" .
+
+<http://example.org/Doel/06.26> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen lichten het onderscheid toe tussen reacties op een prikkel bij plantaardige en dierlijke organismen.";
+  skos:notation "06.26" .
+
+<http://example.org/Doel/06.27> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen leggen uit dat plantaardige en dierlijke organismen zich kunnen handhaven dankzij homeostase.";
+  skos:notation "06.27" .
+
+<http://example.org/Doel/06.28> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen leggen de hormonale regeling van het voortplantingssysteem bij de mens uit.";
+  skos:notation "06.28" .
+
+<http://example.org/Doel/06.29> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen leggen het verband tussen eigenschappen van virussen, bacteriën en schimmels en hun positieve en negatieve rol in de natuur.";
+  skos:notation "06.29" .
+
+<http://example.org/Doel/06.30> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen illustreren interacties tussen organismen van dezelfde soort en van verschillende soorten.";
+  skos:notation "06.30" .
+
+<http://example.org/Doel/06.31> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen leggen het verband tussen materie- en energiestromen in een ecosysteem.";
+  skos:notation "06.31" .
+
+<http://example.org/Doel/06.32> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen onderzoeken zuivere stoffen en soorten mengsels in het dagelijkse leven aan de hand van eigenschappen en scheidingstechnieken.";
+  skos:notation "06.32" .
+
+<http://example.org/Doel/06.33> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen gebruiken een atoommodel om de structuur van atomen en ionen te beschrijven.";
+  skos:notation "06.33" .
+
+<http://example.org/Doel/06.34> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen leggen het verband tussen de plaats en de eigenschappen van atomen in het PSE.";
+  skos:notation "06.34" .
+
+<http://example.org/Doel/06.35> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen interpreteren de naam en symbolische schrijfwijze van enkelvoudige en samengestelde stoffen.";
+  skos:notation "06.35" .
+
+<http://example.org/Doel/06.36> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen leggen het verband tussen de chemische binding en de eigenschappen van een stof.";
+  skos:notation "06.36" .
+
+<http://example.org/Doel/06.37> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen balanceren gegeven eenvoudige chemische reacties en interpreteren ze in termen van materie- en energie-uitwisseling.";
+  skos:notation "06.37" .
+
+<http://example.org/Doel/06.38> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen brengen pH in verband met het zuur, basisch of neutraal karakter van een waterige oplossing en lichten de functie van een zuur-base indicator toe.";
+  skos:notation "06.38" .
+
+<http://example.org/Doel/06.39> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen interpreteren massaconcentratie en molaire concentratie.";
+  skos:notation "06.39" .
+
+<http://example.org/Doel/06.40> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen lossen fysische problemen met en zonder formularium op.";
+  skos:notation "06.40" .
+
+<http://example.org/Doel/06.41> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen interpreteren rechtlijnige bewegingen grafisch en eenparig rechtlijnige bewegingen kwantitatief.";
+  skos:notation "06.41" .
+
+<http://example.org/Doel/06.42> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen stellen krachten vectorieel voor en leggen het verband tussen de verandering van bewegingstoestand van een lichaam en de resulterende kracht.";
+  skos:notation "06.42" .
+
+<http://example.org/Doel/06.43> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen verklaren fenomenen of toepassingen uit het dagelijkse leven aan de hand van het concept druk bij vaste stoffen, gassen en vloeistoffen.";
+  skos:notation "06.43" .
+
+<http://example.org/Doel/06.44> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen stellen de energiebalans van energieomzettingen op aan de hand van de wet van behoud van energie.";
+  skos:notation "06.44" .
+
+<http://example.org/Doel/06.45> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen stellen kwantitatief de energiebalans op van energieomzettingen tussen kinetische, gravitationele of elastische energie in eenvoudige situaties.";
+  skos:notation "06.45" .
+
+<http://example.org/Doel/06.46> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen voeren berekeningen uit in verband met vermogen en rendement bij energieomzettingen in systemen.";
+  skos:notation "06.46" .
+
+<http://example.org/Doel/06.47> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen verklaren het energietransport bij faseovergangen en bij temperatuursveranderingen van stoffen aan de hand van het deeltjesmodel.";
+  skos:notation "06.47" .
+
+<http://example.org/Doel/06.48> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen analyseren verbanden tussen stroomsterkte, spanning en weerstand in een gelijkstroomkring.";
+  skos:notation "06.48" .
+
+<http://example.org/Doel/06.49> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen gebruiken de grootheid vermogen en het Joule-effect om fenomenen in elektrische systemen te verklaren.";
+  skos:notation "06.49" .
+
+<http://example.org/Doel/06.50> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen werken op een veilige en duurzame manier met materialen, stoffen, organismen en technische systemen.";
+  skos:notation "06.50" .
+
+<http://example.org/Doel/06.51> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen voeren onderzoek aan de hand van een wetenschappelijke methode om kennis te ontwikkelen en om vragen te beantwoorden.";
+  skos:notation "06.51" .
+
+<http://example.org/Doel/06.52> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen ontwerpen een oplossing voor een probleem door wetenschappen, technologie of wiskunde geïntegreerd aan te wenden.";
+  skos:notation "06.52" .
+
+<http://example.org/Doel/06.53> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen analyseren de wisselwerking tussen wetenschappen, technologie, wiskunde en de maatschappij aan de hand van maatschappelijke uitdagingen.";
+  skos:notation "06.53" .
+
+<http://example.org/Doel/10%C2%A0> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.35>, <http://example.org/Doel/06.36>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen interpreteren naam en formule van alkanen.";
+  skos:notation "10 " .
+
+<http://example.org/Doel/10B> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.29>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen leggen het verband tussen eigenschappen van virussen, bacteriën en schimmels en hun positieve en negatieve rol in de natuur.";
+  skos:notation "10B" .
+
+<http://example.org/Doel/10F> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.49>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen gebruiken de grootheid vermogen en het Joule-effect om fenomenen in elektrische systemen te verklaren.";
+  skos:notation "10F" .
+
+<http://example.org/Doel/11B> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.30>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen illustreren interacties tussen organismen van dezelfde soort en van verschillende soorten.";
+  skos:notation "11B" .
+
+<http://example.org/Doel/11C> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.36>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen leggen het verband uit tussen bindingstype en oplosbaarheid in water.";
+  skos:notation "11C" .
+
+<http://example.org/Doel/12B> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.31>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen leggen het verband tussen materie- en energiestromen in een ecosysteem.";
+  skos:notation "12B" .
+
+<http://example.org/Doel/12C> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.36>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen leggen het verband uit tussen het bindingstype en het geleidingsvermogen.";
+  skos:notation "12C" .
+
+<http://example.org/Doel/13C> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.38>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen brengen pH in verband met het zuur, basisch of neutraal karakter van een waterige oplossing en lichten de functie van een zuur-base indicator toe.";
+  skos:notation "13C" .
+
+<http://example.org/Doel/14C> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.39>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen interpreteren massaconcentratie en molaire concentratie.";
+  skos:notation "14C" .
+
+<http://example.org/Doel/1B> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.24>, <http://example.org/Doel/06.25>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen tonen aan dat plantaardige en dierlijke organismen als systeem functioneren.";
+  skos:notation "1B" .
+
+<http://example.org/Doel/1C> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.32>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen onderzoeken zuivere stoffen en soorten mengsels in het dagelijkse leven aan de hand van eigenschappen en scheidingstechnieken.";
+  skos:notation "1C" .
+
+<http://example.org/Doel/1F> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.41>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen interpreteren rechtlijnige bewegingen grafisch en eenparig rechtlijnige bewegingen kwantitatief.";
+  skos:notation "1F" .
+
+<http://example.org/Doel/1S> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.51>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen voeren onderzoek aan de hand van een wetenschappelijke methode om kennis te ontwikkelen en om vragen te beantwoorden.";
+  skos:notation "1S" .
+
+<http://example.org/Doel/2B> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.25>, <http://example.org/Doel/06.27>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen illustreren dat plantaardige en dierlijke organismen homeostase hanteren met behulp van feedbacksystemen.";
+  skos:notation "2B" .
+
+<http://example.org/Doel/2C> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.35>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen interpreteren de symbolische schrijfwijze van enkelvoudige en samengestelde stoffen.";
+  skos:notation "2C" .
+
+<http://example.org/Doel/2F> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.42>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen stellen krachten vectorieel voor en leggen het verband tussen de verandering van bewegingstoestand van een lichaam en de resulterende kracht.";
+  skos:notation "2F" .
+
+<http://example.org/Doel/2S> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.50>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen werken op een veilige en duurzame manier met materialen, stoffen, organismen en technische systemen.";
+  skos:notation "2S" .
+
+<http://example.org/Doel/3B> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.24>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen leggen uit hoe plantaardige en dierlijke organismen prikkels ontvangen.";
+  skos:notation "3B" .
+
+<http://example.org/Doel/3C> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.35>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen interpreteren naam en formule van enkelvoudige stoffen.";
+  skos:notation "3C" .
+
+<http://example.org/Doel/3F> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.43>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen verklaren fenomenen of toepassingen uit het dagelijks leven aan de hand van het concept druk bij vaste stoffen, vloeistoffen en gassen.";
+  skos:notation "3F" .
+
+<http://example.org/Doel/3S> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.52>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen ontwerpen een oplossing voor een probleem door wetenschappen, technologie of wiskunde geïntegreerd aan te wenden.";
+  skos:notation "3S" .
+
+<http://example.org/Doel/4B> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.25>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen lichten de overdracht van informatie via impulsgeleiding en impulsoverdracht in zenuwen toe.";
+  skos:notation "4B" .
+
+<http://example.org/Doel/4C> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.37>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen balanceren gegeven eenvoudige anorganische chemische reacties door gebruik te maken van de wet van behoud van massa. ";
+  skos:notation "4C" .
+
+<http://example.org/Doel/4F> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.44>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen stellen de energiebalans van energieomzettingen op aan de hand van de wet van behoud van energie.";
+  skos:notation "4F" .
+
+<http://example.org/Doel/4S> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.53>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen analyseren de wisselwerking tussen wetenschappen, technologie, wiskunde en de maatschappij aan de hand van maatschappelijke uitdagingen.";
+  skos:notation "4S" .
+
+<http://example.org/Doel/5B> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.26>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen illustreren het verschil in aansturing tussen gladde en dwarsgestreepte spieren.";
+  skos:notation "5B" .
+
+<http://example.org/Doel/5C> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.37>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen interpreteren bij een chemische reactie de energie-uitwisseling met de omgeving.";
+  skos:notation "5C" .
+
+<http://example.org/Doel/5F> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.45>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen stellen kwantitatief de energiebalans op van energieomzettingen tussen kinetische, gravitationele of elastische energie in eenvoudige situaties.";
+  skos:notation "5F" .
+
+<http://example.org/Doel/5S> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.40>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen lossen fysische problemen met en zonder formularium op.";
+  skos:notation "5S" .
+
+<http://example.org/Doel/6B> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.25>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen vergelijken de bouw en werking van exocriene en endocriene klieren.";
+  skos:notation "6B" .
+
+<http://example.org/Doel/6C> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.33>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen gebruiken een atoommodel om de structuur van atomen en ionen te beschrijven.";
+  skos:notation "6C" .
+
+<http://example.org/Doel/6F> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.46>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen voeren berekeningen uit in verband met vermogen en rendement bij energieomzettingen in systemen.";
+  skos:notation "6F" .
+
+<http://example.org/Doel/7B> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.25>, <http://example.org/Doel/06.26>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen leggen aan de hand van een voorbeeld uit hoe de coördinerende rol van het endocriene stelsel bij een reactie op een prikkel bijdraagt tot het functioneren van een dierlijk organisme.";
+  skos:notation "7B" .
+
+<http://example.org/Doel/7C> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.34>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen beschrijven het PSE als een rangschikking volgens toenemend atoomnummer voor elementen uit de a-groepen en de edelgassen.";
+  skos:notation "7C" .
+
+<http://example.org/Doel/7F> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.47>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen verklaren het energietransport bij temperatuursveranderingen van stoffen aan de hand van het deeltjesmodel.";
+  skos:notation "7F" .
+
+<http://example.org/Doel/8B> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.25>, <http://example.org/Doel/06.26>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen leggen aan de hand van een voorbeeld uit hoe de coördinerende rol van plantenhormonen bij een reactie op een prikkel bijdraagt tot het functioneren van de plant.";
+  skos:notation "8B" .
+
+<http://example.org/Doel/8C> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.34>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen leiden eigenschappen van atomen af vanuit het PSE.";
+  skos:notation "8C" .
+
+<http://example.org/Doel/8F> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.47>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen verklaren het energietransport bij faseovergangen van stoffen aan de hand van het deeltjesmodel.";
+  skos:notation "8F" .
+
+<http://example.org/Doel/9B> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.28>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen leggen de hormonale regeling van het voortplantingssysteem bij de mens uit.";
+  skos:notation "9B" .
+
+<http://example.org/Doel/9C> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.35>, <http://example.org/Doel/06.36>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen interpreteren naam en formule van anorganische zuren, basen, zouten of en oxiden.";
+  skos:notation "9C" .
+
+<http://example.org/Doel/9F> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SR-Nat_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.48>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  dc:description "De leerlingen analyseren verbanden tussen stroomsterkte, spanning en weerstand in een gelijkstroomkring.";
+  skos:notation "9F" .
+
+<http://example.org/Doel/BV2_06.01> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.01>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen leggen de invoering van de reële getallen uit als de vervollediging van de reële getallenas.";
+  skos:notation "BV2_06.01" .
+
+<http://example.org/Doel/BV2_06.02> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.02>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen ordenen reële getallen.";
+  skos:notation "BV2_06.02" .
+
+<http://example.org/Doel/BV2_06.03> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.03>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen rekenen met reële getallen.";
+  skos:notation "BV2_06.03" .
+
+<http://example.org/Doel/BV2_06.04> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.04>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen bepalen de onderlinge ligging van twee rechten, twee vlakken en een rechte en een vlak in ruimtelijke situaties.";
+  skos:notation "BV2_06.04" .
+
+<http://example.org/Doel/BV2_06.05> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.05>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen bepalen het effect van schaalverandering op vorm, lengte, oppervlakte en inhoud of volume.";
+  skos:notation "BV2_06.05" .
+
+<http://example.org/Doel/BV2_06.06> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.06>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen passen de stelling van Pythagoras toe om meetkundige problemen op te lossen in het vlak en in de ruimte.";
+  skos:notation "BV2_06.06" .
+
+<http://example.org/Doel/BV2_06.07> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.07>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen gebruiken de goniometrische getallen sinus, cosinus en tangens in rechthoekige driehoeken om meetkundige problemen op te lossen.";
+  skos:notation "BV2_06.07" .
+
+<http://example.org/Doel/BV2_06.08> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.08>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen passen gelijkvormigheidskenmerken van driehoeken toe om meetkundige problemen op te lossen.";
+  skos:notation "BV2_06.08" .
+
+<http://example.org/Doel/BV2_06.09> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.09>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen tekenen in het vlak de som van vectoren en de vermenigvuldiging van een vector met een getal.";
+  skos:notation "BV2_06.09" .
+
+<http://example.org/Doel/BV2_06.10> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.10>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen lossen eerstegraadsvergelijkingen en -ongelijkheden in één onbekende algebraïsch en grafisch op.";
+  skos:notation "BV2_06.10" .
+
+<http://example.org/Doel/BV2_06.11> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.11>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen drukken bij een formule één variabele uit in functie van een andere.";
+  skos:notation "BV2_06.11" .
+
+<http://example.org/Doel/BV2_06.12> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.12>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen leggen uit wat een functie is en leggen het verband tussen verschillende representaties van een functie: verwoording, tabel, grafiek en voorschrift.";
+  skos:notation "BV2_06.12" .
+
+<http://example.org/Doel/BV2_06.13> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.13>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen bepalen het voorschrift, de grafiek, de tabel en de verwoording van een eerstegraadsfunctie als één van de andere representaties gegeven is.";
+  skos:notation "BV2_06.13" .
+
+<http://example.org/Doel/BV2_06.14> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.14>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen analyseren kenmerken van eerstegraadsfuncties: domein, bereik, nulwaarden, tekenverloop en stijgen/dalen.";
+  skos:notation "BV2_06.14" .
+
+<http://example.org/Doel/BV2_06.15> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.15>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen analyseren kenmerken van tweedegraadsfuncties van de vorm f(x)=ax²: domein, bereik, nulwaarden, tekenverloop, stijgen/dalen, extremum, toenemende/afnemende stijging/daling en symmetrie ten opzichte van een verticale rechte.";
+  skos:notation "BV2_06.15" .
+
+<http://example.org/Doel/BV2_06.16> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.16>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen lossen stelsels van twee eerstegraadsvergelijkingen in twee onbekenden algebraïsch en grafisch op.";
+  skos:notation "BV2_06.16" .
+
+<http://example.org/Doel/BV2_06.17> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.17>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen lossen telproblemen op met behulp van boomdiagrammen en venndiagrammen.";
+  skos:notation "BV2_06.17" .
+
+<http://example.org/Doel/BV2_06.18> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.18>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen analyseren statistische gegevens aan de hand van voorstellingswijzen en centrum- en spreidingsmaten.";
+  skos:notation "BV2_06.18" .
+
+<http://example.org/Doel/BV2_06.19> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.19>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen bepalen de waarheidswaarde van logische uitspraken met behulp van waarheidstabellen.";
+  skos:notation "BV2_06.19" .
+
+<http://example.org/Doel/BV2_06.20> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.20>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen beargumenteren wiskundige redeneringen en maken daarbij ook gebruik van eigenschappen of van een tegenvoorbeeld.";
+  skos:notation "BV2_06.20" .
+
+<http://example.org/Doel/BV2_06.21> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.21>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen beschrijven fenomenen uit de realiteit aan de hand van wiskundige concepten uit de tweede graad.";
+  skos:notation "BV2_06.21" .
+
+<http://example.org/Doel/BV2_06.22> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.22>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen lossen vraagstukken en problemen op door te mathematiseren en demathematiseren en door gebruik te maken van heuristieken.";
+  skos:notation "BV2_06.22" .
+
+<http://example.org/Doel/BV2_06.23> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.23>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen gebruiken ICT om berekeningen uit te voeren en grafische voorstellingen te maken.";
+  skos:notation "BV2_06.23" .
+
+<http://example.org/Doel/BV2_06.24> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.24>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen leggen uit hoe plantaardige en dierlijke organismen prikkels ontvangen.";
+  skos:notation "BV2_06.24" .
+
+<http://example.org/Doel/BV2_06.25> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.25>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen leggen uit hoe bij plantaardige en dierlijke organismen een prikkel verwerkt wordt.";
+  skos:notation "BV2_06.25" .
+
+<http://example.org/Doel/BV2_06.26> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.26>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen lichten het onderscheid toe tussen reacties op een prikkel bij plantaardige en dierlijke organismen.";
+  skos:notation "BV2_06.26" .
+
+<http://example.org/Doel/BV2_06.27> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.27>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen leggen uit dat plantaardige en dierlijke organismen zich kunnen handhaven dankzij homeostase.";
+  skos:notation "BV2_06.27" .
+
+<http://example.org/Doel/BV2_06.28> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.28>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen leggen de hormonale regeling van het voortplantingssysteem bij de mens uit.";
+  skos:notation "BV2_06.28" .
+
+<http://example.org/Doel/BV2_06.29> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.29>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen leggen het verband tussen eigenschappen van virussen, bacteriën en schimmels en hun positieve en negatieve rol in de natuur.";
+  skos:notation "BV2_06.29" .
+
+<http://example.org/Doel/BV2_06.30> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.30>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen illustreren interacties tussen organismen van dezelfde soort en van verschillende soorten.";
+  skos:notation "BV2_06.30" .
+
+<http://example.org/Doel/BV2_06.31> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.31>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen leggen het verband tussen materie- en energiestromen in een ecosysteem.";
+  skos:notation "BV2_06.31" .
+
+<http://example.org/Doel/BV2_06.32> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.32>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen onderzoeken zuivere stoffen en soorten mengsels in het dagelijkse leven aan de hand van eigenschappen en scheidingstechnieken.";
+  skos:notation "BV2_06.32" .
+
+<http://example.org/Doel/BV2_06.33> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.33>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen gebruiken een atoommodel om de structuur van atomen en ionen te beschrijven.";
+  skos:notation "BV2_06.33" .
+
+<http://example.org/Doel/BV2_06.34> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.34>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen leggen het verband tussen de plaats en de eigenschappen van atomen in het PSE.";
+  skos:notation "BV2_06.34" .
+
+<http://example.org/Doel/BV2_06.35> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.35>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen interpreteren de naam en symbolische schrijfwijze van enkelvoudige en samengestelde stoffen.";
+  skos:notation "BV2_06.35" .
+
+<http://example.org/Doel/BV2_06.36> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.36>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen leggen het verband tussen de chemische binding en de eigenschappen van een stof.";
+  skos:notation "BV2_06.36" .
+
+<http://example.org/Doel/BV2_06.37> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.37>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen balanceren gegeven eenvoudige chemische reacties en interpreteren ze in termen van materie- en energie-uitwisseling.";
+  skos:notation "BV2_06.37" .
+
+<http://example.org/Doel/BV2_06.38> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.38>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen brengen pH in verband met het zuur, basisch of neutraal karakter van een waterige oplossing en lichten de functie van een zuur-base indicator toe.";
+  skos:notation "BV2_06.38" .
+
+<http://example.org/Doel/BV2_06.39> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.39>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen interpreteren massaconcentratie en molaire concentratie.";
+  skos:notation "BV2_06.39" .
+
+<http://example.org/Doel/BV2_06.40> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.40>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen lossen fysische problemen met en zonder formularium op.";
+  skos:notation "BV2_06.40" .
+
+<http://example.org/Doel/BV2_06.41> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.41>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen interpreteren rechtlijnige bewegingen grafisch en eenparig rechtlijnige bewegingen kwantitatief.";
+  skos:notation "BV2_06.41" .
+
+<http://example.org/Doel/BV2_06.42> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.42>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen stellen krachten vectorieel voor en leggen het verband tussen de verandering van bewegingstoestand van een lichaam en de resulterende kracht.";
+  skos:notation "BV2_06.42" .
+
+<http://example.org/Doel/BV2_06.43> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.43>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen verklaren fenomenen of toepassingen uit het dagelijkse leven aan de hand van het concept druk bij vaste stoffen, gassen en vloeistoffen.";
+  skos:notation "BV2_06.43" .
+
+<http://example.org/Doel/BV2_06.44> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.44>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen stellen de energiebalans van energieomzettingen op aan de hand van de wet van behoud van energie.";
+  skos:notation "BV2_06.44" .
+
+<http://example.org/Doel/BV2_06.45> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.45>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen stellen kwantitatief de energiebalans op van energieomzettingen tussen kinetische, gravitationele of elastische energie in eenvoudige situaties.";
+  skos:notation "BV2_06.45" .
+
+<http://example.org/Doel/BV2_06.46> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.46>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen voeren berekeningen uit in verband met vermogen en rendement bij energieomzettingen in systemen.";
+  skos:notation "BV2_06.46" .
+
+<http://example.org/Doel/BV2_06.47> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.47>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen verklaren het energietransport bij faseovergangen en bij temperatuursveranderingen van stoffen aan de hand van het deeltjesmodel.";
+  skos:notation "BV2_06.47" .
+
+<http://example.org/Doel/BV2_06.48> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.48>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen analyseren verbanden tussen stroomsterkte, spanning en weerstand in een gelijkstroomkring.";
+  skos:notation "BV2_06.48" .
+
+<http://example.org/Doel/BV2_06.49> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.49>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen gebruiken de grootheid vermogen en het Joule-effect om fenomenen in elektrische systemen te verklaren.";
+  skos:notation "BV2_06.49" .
+
+<http://example.org/Doel/BV2_06.50> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.50>;
+  exr:doel_relatie <http://example.org/Doel_relatie/hetzelfde>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen werken op een veilige en duurzame manier met materialen, stoffen, organismen en technische systemen.";
+  skos:notation "BV2_06.50" .
+
+<http://example.org/Doel/BV2_06.51> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.51>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen voeren onderzoek aan de hand van een wetenschappelijke methode om kennis te ontwikkelen en om vragen te beantwoorden.";
+  skos:notation "BV2_06.51" .
+
+<http://example.org/Doel/BV2_06.52> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.52>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen ontwerpen een oplossing voor een probleem door wetenschappen, technologie of wiskunde geïntegreerd aan te wenden.";
+  skos:notation "BV2_06.52" .
+
+<http://example.org/Doel/BV2_06.53> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/SC-STEM_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.53>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  dc:description "De leerlingen analyseren de wisselwerking tussen wetenschappen, technologie, wiskunde en de maatschappij aan de hand van maatschappelijke uitdagingen.";
+  skos:notation "BV2_06.53" .
+
+<http://example.org/Doel/Oud_1234> a ex:Doel;
+  exr:collectie <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:collectie_ov <http://example.org/Collectie_OV/DT-ET_S-gr2-DoF>;
+  exr:doel <http://example.org/Doel/06.35>;
+  exr:doel_relatie <http://example.org/Doel_relatie/specifieker>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  dc:description "De leerlingen interpreteren de naam en symbolische schrijfwijze van enkelvoudige en samengestelde stoffen.";
+  skos:notation "Oud_1234" .
+
+<http://example.org/Leermiddel/%28oud%29-focus-natuurwetens-d221> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:doel <http://example.org/Doel/Oud_1234>;
+  exr:naam "(OUD) Focus Natuurwetenschappen 3";
+  exr:niveau <http://example.org/Niveau/S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "(oud)-focus-natuurwetens-d221" .
+
+<http://example.org/Leermiddel/andere-culturen-%28700-170-5b04> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "Andere culturen (700-1700)";
+  exr:niveau <http://example.org/Niveau/S-gr2>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "andere-culturen-(700-170-5b04" .
+
+<http://example.org/Leermiddel/andere-tijden-1%3A-handboe-7026> a ex:Leermiddel;
+  exr:bron "Diligentia";
+  exr:naam "Andere Tijden 1: Handboek";
+  exr:type "Methode";
+  skos:notation "andere-tijden-1:-handboe-7026" .
+
+<http://example.org/Leermiddel/andere-tijden-1-2707> a ex:Leermiddel;
+  exr:bron "Diligentia";
+  exr:naam "Andere Tijden 1";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "andere-tijden-1-2707" .
+
+<http://example.org/Leermiddel/andere-tijden-2%3A-handboe-7035> a ex:Leermiddel;
+  exr:bron "Diligentia";
+  exr:naam "Andere Tijden 2: Handboek";
+  exr:type "Methode";
+  skos:notation "andere-tijden-2:-handboe-7035" .
+
+<http://example.org/Leermiddel/andere-tijden-2-2716> a ex:Leermiddel;
+  exr:bron "Diligentia";
+  exr:naam "Andere Tijden 2";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "andere-tijden-2-2716" .
+
+<http://example.org/Leermiddel/atlas-van-de-algemene-en-aa07> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "Atlas van de algemene en Belgische geschiedenis";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "atlas-van-de-algemene-en-aa07" .
+
+<http://example.org/Leermiddel/congo-en-het-kolonialism-7f9d> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "Congo en het kolonialisme";
+  exr:niveau <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "congo-en-het-kolonialism-7f9d" .
+
+<http://example.org/Leermiddel/de-griekse-oudheid-4038> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "De Griekse Oudheid";
+  exr:niveau <http://example.org/Niveau/S-gr1>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "de-griekse-oudheid-4038" .
+
+<http://example.org/Leermiddel/de-koude-oorlog-2d51> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "De Koude Oorlog";
+  exr:niveau <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "de-koude-oorlog-2d51" .
+
+<http://example.org/Leermiddel/de-middeleeuwen-30ff> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "De middeleeuwen";
+  exr:niveau <http://example.org/Niveau/S-gr2>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "de-middeleeuwen-30ff" .
+
+<http://example.org/Leermiddel/de-prehistorie-2b71> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "De prehistorie";
+  exr:niveau <http://example.org/Niveau/S-gr1>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "de-prehistorie-2b71" .
+
+<http://example.org/Leermiddel/de-vroegmoderne-tijd-51c5> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "De vroegmoderne tijd";
+  exr:niveau <http://example.org/Niveau/S-gr2>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "de-vroegmoderne-tijd-51c5" .
+
+<http://example.org/Leermiddel/de-wereldorde-kantelt-5ba1> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "De wereldorde kantelt";
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "de-wereldorde-kantelt-5ba1" .
+
+<http://example.org/Leermiddel/epic-1-5b2> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "Epic 1";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "epic-1-5b2" .
+
+<http://example.org/Leermiddel/epic-2-5b8> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "Epic 2";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "epic-2-5b8" .
+
+<http://example.org/Leermiddel/epic-3-d%2Fa-cef> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "Epic 3 D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "epic-3-d/a-cef" .
+
+<http://example.org/Leermiddel/epic-3-d-8be> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "Epic 3 D";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "epic-3-d-8be" .
+
+<http://example.org/Leermiddel/epic-4-d%2Fa-en-d-%28dg%29-304c> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "Epic 4 D/A en D (DG)";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "epic-4-d/a-en-d-(dg)-304c" .
+
+<http://example.org/Leermiddel/epic-4-d-8c4> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "Epic 4 D";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "epic-4-d-8c4" .
+
+<http://example.org/Leermiddel/epic-5-5ca> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "Epic 5";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "epic-5-5ca" .
+
+<http://example.org/Leermiddel/epic-6-5d0> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "Epic 6";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "epic-6-5d0" .
+
+<http://example.org/Leermiddel/explo-1-877> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:naam "Explo 1";
+  exr:niveau <http://example.org/Niveau/S-gr1-A>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "explo-1-877" .
+
+<http://example.org/Leermiddel/explo-2-87e> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:naam "Explo 2";
+  exr:niveau <http://example.org/Niveau/S-gr1-A>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "explo-2-87e" .
+
+<http://example.org/Leermiddel/focus-natuurwetenschappe-8f55> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:doel <http://example.org/Doel/BV2_06.40>, <http://example.org/Doel/BV2_06.41>,
+    <http://example.org/Doel/BV2_06.42>, <http://example.org/Doel/BV2_06.43>, <http://example.org/Doel/BV2_06.44>,
+    <http://example.org/Doel/BV2_06.45>, <http://example.org/Doel/BV2_06.46>, <http://example.org/Doel/BV2_06.47>,
+    <http://example.org/Doel/BV2_06.48>, <http://example.org/Doel/BV2_06.49>, <http://example.org/Doel/BV2_06.50>,
+    <http://example.org/Doel/BV2_06.51>, <http://example.org/Doel/BV2_06.52>, <http://example.org/Doel/BV2_06.53>;
+  exr:naam "Focus Natuurwetenschappen 3";
+  exr:niveau <http://example.org/Niveau/S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "focus-natuurwetenschappe-8f55" .
+
+<http://example.org/Leermiddel/focus-natuurwetenschappe-8f70> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:doel <http://example.org/Doel/BV2_06.40>, <http://example.org/Doel/BV2_06.41>,
+    <http://example.org/Doel/BV2_06.42>, <http://example.org/Doel/BV2_06.43>, <http://example.org/Doel/BV2_06.44>,
+    <http://example.org/Doel/BV2_06.45>, <http://example.org/Doel/BV2_06.46>, <http://example.org/Doel/BV2_06.47>,
+    <http://example.org/Doel/BV2_06.48>, <http://example.org/Doel/BV2_06.49>, <http://example.org/Doel/BV2_06.50>,
+    <http://example.org/Doel/BV2_06.51>, <http://example.org/Doel/BV2_06.52>, <http://example.org/Doel/BV2_06.53>;
+  exr:naam "Focus Natuurwetenschappen 4";
+  exr:niveau <http://example.org/Niveau/S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "focus-natuurwetenschappe-8f70" .
+
+<http://example.org/Leermiddel/focus-natuurwetenschappe-8f8b> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:naam "Focus Natuurwetenschappen 5";
+  exr:niveau <http://example.org/Niveau/S-gr3-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "focus-natuurwetenschappe-8f8b" .
+
+<http://example.org/Leermiddel/focus-natuurwetenschappe-8fa6> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:naam "Focus Natuurwetenschappen 6";
+  exr:niveau <http://example.org/Niveau/S-gr3-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "focus-natuurwetenschappe-8fa6" .
+
+<http://example.org/Leermiddel/focus-natuurwetenschappe-f7a0> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:doel <http://example.org/Doel/BV2_06.40>, <http://example.org/Doel/BV2_06.41>,
+    <http://example.org/Doel/BV2_06.42>, <http://example.org/Doel/BV2_06.43>, <http://example.org/Doel/BV2_06.44>,
+    <http://example.org/Doel/BV2_06.45>, <http://example.org/Doel/BV2_06.46>, <http://example.org/Doel/BV2_06.47>,
+    <http://example.org/Doel/BV2_06.48>, <http://example.org/Doel/BV2_06.49>, <http://example.org/Doel/BV2_06.50>,
+    <http://example.org/Doel/BV2_06.51>, <http://example.org/Doel/BV2_06.52>, <http://example.org/Doel/BV2_06.53>;
+  exr:naam "Focus Natuurwetenschappen Concreet 3";
+  exr:niveau <http://example.org/Niveau/S-gr2-DuF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "focus-natuurwetenschappe-f7a0" .
+
+<http://example.org/Leermiddel/focus-natuurwetenschappe-f7c4> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:doel <http://example.org/Doel/BV2_06.40>, <http://example.org/Doel/BV2_06.41>,
+    <http://example.org/Doel/BV2_06.42>, <http://example.org/Doel/BV2_06.43>, <http://example.org/Doel/BV2_06.44>,
+    <http://example.org/Doel/BV2_06.45>, <http://example.org/Doel/BV2_06.46>, <http://example.org/Doel/BV2_06.47>,
+    <http://example.org/Doel/BV2_06.48>, <http://example.org/Doel/BV2_06.49>, <http://example.org/Doel/BV2_06.50>,
+    <http://example.org/Doel/BV2_06.51>, <http://example.org/Doel/BV2_06.52>, <http://example.org/Doel/BV2_06.53>;
+  exr:naam "Focus Natuurwetenschappen Concreet 4";
+  exr:niveau <http://example.org/Niveau/S-gr2-DuF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "focus-natuurwetenschappe-f7c4" .
+
+<http://example.org/Leermiddel/focus-natuurwetenschappe-f7e8> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:naam "Focus Natuurwetenschappen Concreet 5";
+  exr:niveau <http://example.org/Niveau/S-gr3-DuF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "focus-natuurwetenschappe-f7e8" .
+
+<http://example.org/Leermiddel/focus-natuurwetenschappe-f80c> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:naam "Focus Natuurwetenschappen Concreet 6";
+  exr:niveau <http://example.org/Niveau/S-gr3-DuF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "focus-natuurwetenschappe-f80c" .
+
+<http://example.org/Leermiddel/genie%2B-1-7a2> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "GENIE+ 1";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "genie+-1-7a2" .
+
+<http://example.org/Leermiddel/genie%2B-2-7aa> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "GENIE+ 2";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "genie+-2-7aa" .
+
+<http://example.org/Leermiddel/genie-natuurwetenschappe-8d2d> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "GENIE Natuurwetenschappen 3";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "genie-natuurwetenschappe-8d2d" .
+
+<http://example.org/Leermiddel/genie-natuurwetenschappe-986d> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "GENIE Natuurwetenschappen 5-6";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "genie-natuurwetenschappe-986d" .
+
+<http://example.org/Leermiddel/geschiedenis-van-belgi%C3%AB-7203> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "Geschiedenis van België";
+  exr:niveau <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "geschiedenis-van-belgië-7203" .
+
+<http://example.org/Leermiddel/hoezo-4a8> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "HOEZO";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "hoezo-4a8" .
+
+<http://example.org/Leermiddel/is-en-radicalisering-53cb> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "IS en radicalisering";
+  exr:niveau <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "is-en-radicalisering-53cb" .
+
+<http://example.org/Leermiddel/isaac-natuurwetenschappe-8a34> a ex:Leermiddel;
+  exr:bron "Die Keure";
+  exr:naam "Isaac-natuurwetenschappen 1 – set van 4 modules (module 1-2-3-4)";
+  exr:niveau <http://example.org/Niveau/S-gr1-A>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "isaac-natuurwetenschappe-8a34" .
+
+<http://example.org/Leermiddel/isaac-natuurwetenschappe-976e> a ex:Leermiddel;
+  exr:bron "Die Keure";
+  exr:naam "Isaac-natuurwetenschappen 1 /2 - set van 3 modules (module 5-6-7)";
+  exr:niveau <http://example.org/Niveau/S-gr1-A>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "isaac-natuurwetenschappe-976e" .
+
+<http://example.org/Leermiddel/janus-1-880> a ex:Leermiddel;
+  exr:bron "Die Keure";
+  exr:naam "Janus 1";
+  exr:niveau <http://example.org/Niveau/S-gr1-A>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "janus-1-880" .
+
+<http://example.org/Leermiddel/janus-2-887> a ex:Leermiddel;
+  exr:bron "Die Keure";
+  exr:naam "Janus 2";
+  exr:niveau <http://example.org/Niveau/S-gr1-A>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "janus-2-887" .
+
+<http://example.org/Leermiddel/janus-3-d%26a-1039> a ex:Leermiddel;
+  exr:bron "Die Keure";
+  exr:naam "Janus 3 D&A";
+  exr:niveau <http://example.org/Niveau/S-gr2-DuF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "janus-3-d&a-1039" .
+
+<http://example.org/Leermiddel/janus-3-d-bf2> a ex:Leermiddel;
+  exr:bron "Die Keure";
+  exr:naam "Janus 3 D";
+  exr:niveau <http://example.org/Niveau/S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "janus-3-d-bf2" .
+
+<http://example.org/Leermiddel/janus-4-d%26a-1040> a ex:Leermiddel;
+  exr:bron "Die Keure";
+  exr:naam "Janus 4 D&A";
+  exr:niveau <http://example.org/Niveau/S-gr2-DuF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "janus-4-d&a-1040" .
+
+<http://example.org/Leermiddel/janus-4-d-bf9> a ex:Leermiddel;
+  exr:bron "Die Keure";
+  exr:naam "Janus 4 D";
+  exr:niveau <http://example.org/Niveau/S-gr2-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "janus-4-d-bf9" .
+
+<http://example.org/Leermiddel/janus-5-d%26a-1047> a ex:Leermiddel;
+  exr:bron "Die Keure";
+  exr:naam "Janus 5 D&A";
+  exr:niveau <http://example.org/Niveau/S-gr3-DuF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "janus-5-d&a-1047" .
+
+<http://example.org/Leermiddel/janus-5-d-c00> a ex:Leermiddel;
+  exr:bron "Die Keure";
+  exr:naam "Janus 5 D";
+  exr:niveau <http://example.org/Niveau/S-gr3-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "janus-5-d-c00" .
+
+<http://example.org/Leermiddel/janus-6-d%26a-104e> a ex:Leermiddel;
+  exr:bron "Die Keure";
+  exr:naam "Janus 6 D&A";
+  exr:niveau <http://example.org/Niveau/S-gr3-DuF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "janus-6-d&a-104e" .
+
+<http://example.org/Leermiddel/janus-6-d-c07> a ex:Leermiddel;
+  exr:bron "Die Keure";
+  exr:naam "Janus 6 D";
+  exr:niveau <http://example.org/Niveau/S-gr3-DoF>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "janus-6-d-c07" .
+
+<http://example.org/Leermiddel/kritisch-kijken-2dde> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "Kritisch Kijken";
+  exr:niveau <http://example.org/Niveau/S-gr1>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "kritisch-kijken-2dde" .
+
+<http://example.org/Leermiddel/lernova-geschiedenis-1a-5fd6> a ex:Leermiddel;
+  exr:bron "Lernova";
+  exr:naam "Lernova Geschiedenis 1A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "lernova-geschiedenis-1a-5fd6" .
+
+<http://example.org/Leermiddel/lernova-geschiedenis-2a-5fec> a ex:Leermiddel;
+  exr:bron "Lernova";
+  exr:naam "Lernova Geschiedenis 2A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "lernova-geschiedenis-2a-5fec" .
+
+<http://example.org/Leermiddel/lernova-geschiedenis-3d%2F-6b08> a ex:Leermiddel;
+  exr:bron "Lernova";
+  exr:naam "Lernova Geschiedenis 3D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "lernova-geschiedenis-3d/-6b08" .
+
+<http://example.org/Leermiddel/lernova-geschiedenis-3dg-66ef> a ex:Leermiddel;
+  exr:bron "Lernova";
+  exr:naam "Lernova Geschiedenis 3DG";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "lernova-geschiedenis-3dg-66ef" .
+
+<http://example.org/Leermiddel/lernova-geschiedenis-3do-67af> a ex:Leermiddel;
+  exr:bron "Lernova";
+  exr:naam "Lernova Geschiedenis 3DO";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "lernova-geschiedenis-3do-67af" .
+
+<http://example.org/Leermiddel/lernova-geschiedenis-4d%2F-6b1e> a ex:Leermiddel;
+  exr:bron "Lernova";
+  exr:naam "Lernova Geschiedenis 4D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "lernova-geschiedenis-4d/-6b1e" .
+
+<http://example.org/Leermiddel/lernova-geschiedenis-4dg-6705> a ex:Leermiddel;
+  exr:bron "Lernova";
+  exr:naam "Lernova Geschiedenis 4DG";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "lernova-geschiedenis-4dg-6705" .
+
+<http://example.org/Leermiddel/lernova-geschiedenis-4do-67c5> a ex:Leermiddel;
+  exr:bron "Lernova";
+  exr:naam "Lernova Geschiedenis 4DO";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "lernova-geschiedenis-4do-67c5" .
+
+<http://example.org/Leermiddel/lernova-geschiedenis-5%2F6-75fd> a ex:Leermiddel;
+  exr:bron "Lernova";
+  exr:naam "Lernova Geschiedenis 5/6 DO";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "lernova-geschiedenis-5/6-75fd" .
+
+<http://example.org/Leermiddel/lernova-geschiedenis-5%2F6-97fb> a ex:Leermiddel;
+  exr:bron "Lernova";
+  exr:naam "Lernova Geschiedenis 5/6 DG - D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "lernova-geschiedenis-5/6-97fb" .
+
+<http://example.org/Leermiddel/lernova-natuurwetenschap-ad75> a ex:Leermiddel;
+  exr:bron "Lernova";
+  exr:naam "Lernova Natuurwetenschappen 3D";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "lernova-natuurwetenschap-ad75" .
+
+<http://example.org/Leermiddel/lernova-natuurwetenschap-ad92> a ex:Leermiddel;
+  exr:bron "Lernova";
+  exr:naam "Lernova Natuurwetenschappen 4D";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "lernova-natuurwetenschap-ad92" .
+
+<http://example.org/Leermiddel/lernova-natuurwetenschap-bd34> a ex:Leermiddel;
+  exr:bron "Lernova";
+  exr:naam "Lernova Natuurwetenschappen 1/2 A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "lernova-natuurwetenschap-bd34" .
+
+<http://example.org/Leermiddel/lernova-natuurwetenschap-be87> a ex:Leermiddel;
+  exr:bron "Lernova";
+  exr:naam "Lernova Natuurwetenschappen 5/6 D";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "lernova-natuurwetenschap-be87" .
+
+<http://example.org/Leermiddel/macroscoop-1%2F2-1f5c> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "MacroScoop 1/2";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "macroscoop-1/2-1f5c" .
+
+<http://example.org/Leermiddel/macroscoop-3%2F4-1f90> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "MacroScoop 3/4";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "macroscoop-3/4-1f90" .
+
+<http://example.org/Leermiddel/macroscoop-5-1a6d> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "MacroScoop 5";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "macroscoop-5-1a6d" .
+
+<http://example.org/Leermiddel/macroscoop-6-1a79> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "MacroScoop 6";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "macroscoop-6-1a79" .
+
+<http://example.org/Leermiddel/max-natuur-1b-1e02> a ex:Leermiddel;
+  exr:bron "Die Keure";
+  exr:naam "Max-natuur 1B";
+  exr:niveau <http://example.org/Niveau/S-gr1-B>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "max-natuur-1b-1e02" .
+
+<http://example.org/Leermiddel/max-natuur-2b-1e0e> a ex:Leermiddel;
+  exr:bron "Die Keure";
+  exr:naam "Max-natuur 2B";
+  exr:niveau <http://example.org/Niveau/S-gr1-B>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "max-natuur-2b-1e0e" .
+
+<http://example.org/Leermiddel/memoria-1-e2a> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:naam "Memoria 1";
+  exr:niveau <http://example.org/Niveau/S-gr1-A>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "memoria-1-e2a" .
+
+<http://example.org/Leermiddel/memoria-2-e33> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:naam "Memoria 2";
+  exr:niveau <http://example.org/Niveau/S-gr1-A>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "memoria-2-e33" .
+
+<http://example.org/Leermiddel/memoria-3.1-1223> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:naam "Memoria 3.1";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "memoria-3.1-1223" .
+
+<http://example.org/Leermiddel/memoria-3.2-122e> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:naam "Memoria 3.2";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "memoria-3.2-122e" .
+
+<http://example.org/Leermiddel/memoria-4.1-122c> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:naam "Memoria 4.1";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "memoria-4.1-122c" .
+
+<http://example.org/Leermiddel/memoria-4.2-1237> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:naam "Memoria 4.2";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "memoria-4.2-1237" .
+
+<http://example.org/Leermiddel/memoria-5-6-1262> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:naam "Memoria 5-6";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "memoria-5-6-1262" .
+
+<http://example.org/Leermiddel/memoria-5.1-1235> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:naam "Memoria 5.1";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "memoria-5.1-1235" .
+
+<http://example.org/Leermiddel/memoria-6.1-123e> a ex:Leermiddel;
+  exr:bron "Pelckmans";
+  exr:naam "Memoria 6.1";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "memoria-6.1-123e" .
+
+<http://example.org/Leermiddel/microscoop-natuur-3cab> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "MicroScoop Natuur";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "microscoop-natuur-3cab" .
+
+<http://example.org/Leermiddel/microscoop-ruimte-3be0> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "MicroScoop Ruimte";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "microscoop-ruimte-3be0" .
+
+<http://example.org/Leermiddel/moderne-tijd-1de8> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "Moderne tijd";
+  exr:niveau <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "moderne-tijd-1de8" .
+
+<http://example.org/Leermiddel/muziek-voor-de-twintigst-b4e3> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "Muziek voor de twintigste eeuw";
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "muziek-voor-de-twintigst-b4e3" .
+
+<http://example.org/Leermiddel/n%40tura%3A-natuurwetenschap-a4bd> exr:bron "Diligentia";
+  exr:naam "N@tura: natuurwetenschappen 1";
+  a ex:Leermiddel;
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "n@tura:-natuurwetenschap-a4bd" .
+
+<http://example.org/Leermiddel/n%40tura%3A-natuurwetenschap-a4da> a ex:Leermiddel;
+  exr:bron "Diligentia";
+  exr:naam "N@tura: natuurwetenschappen 2";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "n@tura:-natuurwetenschap-a4da" .
+
+<http://example.org/Leermiddel/nerf-1-5cc> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "Nerf 1";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "nerf-1-5cc" .
+
+<http://example.org/Leermiddel/nerf-2-5d2> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "Nerf 2";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "nerf-2-5d2" .
+
+<http://example.org/Leermiddel/organen-en-menselijke-st-b7b7> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "Organen en menselijke stelsels";
+  exr:niveau <http://example.org/Niveau/S-gr1>, <http://example.org/Niveau/S-gr2>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "organen-en-menselijke-st-b7b7" .
+
+<http://example.org/Leermiddel/sapiens-1-e74> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "Sapiens 1";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "sapiens-1-e74" .
+
+<http://example.org/Leermiddel/sapiens-2-e7d> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "Sapiens 2";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "sapiens-2-e7d" .
+
+<http://example.org/Leermiddel/sapiens-3-ddg-%26-d%2Fa-2c1c> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "Sapiens 3 DDG & D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "sapiens-3-ddg-&-d/a-2c1c" .
+
+<http://example.org/Leermiddel/sapiens-3-ddo---leerboek-63a4> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "Sapiens 3 DDO - leerboek";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "sapiens-3-ddo---leerboek-63a4" .
+
+<http://example.org/Leermiddel/sapiens-3-ddo---leerwerk-90df> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "Sapiens 3 DDO - leerwerkboek";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "sapiens-3-ddo---leerwerk-90df" .
+
+<http://example.org/Leermiddel/sapiens-4-ddg-%26-d%2Fa-2c25> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "Sapiens 4 DDG & D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "sapiens-4-ddg-&-d/a-2c25" .
+
+<http://example.org/Leermiddel/sapiens-4-ddo-19ee> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "Sapiens 4 DDO";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "sapiens-4-ddo-19ee" .
+
+<http://example.org/Leermiddel/sapiens-5-ddg-%26-d%2Fa-2c2e> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "Sapiens 5 DDG & D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "sapiens-5-ddg-&-d/a-2c2e" .
+
+<http://example.org/Leermiddel/sapiens-5-ddo-19f7> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "Sapiens 5 DDO";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "sapiens-5-ddo-19f7" .
+
+<http://example.org/Leermiddel/sapiens-6-ddg-%26-d%2Fa-2c37> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "Sapiens 6 DDG & D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "sapiens-6-ddg-&-d/a-2c37" .
+
+<http://example.org/Leermiddel/sapiens-6-ddo-1a00> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "Sapiens 6 DDO";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "sapiens-6-ddo-1a00" .
+
+<http://example.org/Leermiddel/socio-economische-transi-a45a> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "Socio-economische transities";
+  exr:niveau <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "socio-economische-transi-a45a" .
+
+<http://example.org/Leermiddel/storiahd-classic-1-38f3> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD classic 1";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-classic-1-38f3" .
+
+<http://example.org/Leermiddel/storiahd-classic-2-3905> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD classic 2";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-classic-2-3905" .
+
+<http://example.org/Leermiddel/storiahd-classic-3-ddg---69a6> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD classic 3 DDG - D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-classic-3-ddg---69a6" .
+
+<http://example.org/Leermiddel/storiahd-classic-3-ddo-4d25> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD classic 3 DDO";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-classic-3-ddo-4d25" .
+
+<http://example.org/Leermiddel/storiahd-classic-4-ddg---69b8> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD classic 4 DDG - D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-classic-4-ddg---69b8" .
+
+<http://example.org/Leermiddel/storiahd-classic-4-ddo-4d37> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD classic 4 DDO";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-classic-4-ddo-4d37" .
+
+<http://example.org/Leermiddel/storiahd-classic-5-ddg---69ca> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD classic 5 DDG - D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-classic-5-ddg---69ca" .
+
+<http://example.org/Leermiddel/storiahd-classic-5-ddo-4d49> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD classic 5 DDO";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-classic-5-ddo-4d49" .
+
+<http://example.org/Leermiddel/storiahd-classic-6-ddg---69dc> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD classic 6 DDG - D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-classic-6-ddg---69dc" .
+
+<http://example.org/Leermiddel/storiahd-classic-6-ddo-4d5b> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD classic 6 DDO";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-classic-6-ddo-4d5b" .
+
+<http://example.org/Leermiddel/storiahd-go%21-1-19e0> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD GO! 1";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-go!-1-19e0" .
+
+<http://example.org/Leermiddel/storiahd-go%21-2-19ee> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD GO! 2";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-go!-2-19ee" .
+
+<http://example.org/Leermiddel/storiahd-go%21-3-d%2Fa-27cd> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD GO! 3 D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-go!-3-d/a-27cd" .
+
+<http://example.org/Leermiddel/storiahd-go%21-3-d-201c> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD GO! 3 D";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-go!-3-d-201c" .
+
+<http://example.org/Leermiddel/storiahd-go%21-4-ddg---d%2Fa-4259> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD GO! 4 DDG - D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-go!-4-ddg---d/a-4259" .
+
+<http://example.org/Leermiddel/storiahd-live-1-249e> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD Live 1";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-live-1-249e" .
+
+<http://example.org/Leermiddel/storiahd-live-2-24ad> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD Live 2";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-live-2-24ad" .
+
+<http://example.org/Leermiddel/storiahd-live-3-ddg---d%2F-4f1b> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD Live 3 DDG - D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-live-3-ddg---d/-4f1b" .
+
+<http://example.org/Leermiddel/storiahd-live-3-ddo-35e5> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD Live 3 DDO";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-live-3-ddo-35e5" .
+
+<http://example.org/Leermiddel/storiahd-live-4-ddg---d%2F-4f2a> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD Live 4 DDG - D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-live-4-ddg---d/-4f2a" .
+
+<http://example.org/Leermiddel/storiahd-live-5-ddg---d%2F-4f39> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD Live 5 DDG - D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-live-5-ddg---d/-4f39" .
+
+<http://example.org/Leermiddel/storiahd-live-6-ddg---d%2F-4f48> a ex:Leermiddel;
+  exr:bron "Van In";
+  exr:naam "StoriaHD Live 6 DDG - D/A";
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Methode";
+  skos:notation "storiahd-live-6-ddg---d/-4f48" .
+
+<http://example.org/Leermiddel/uitgeklaard%3A-de-oorlog-i-eb4b> a ex:Leermiddel;
+  exr:bron "Het Archief voor Onderwijs";
+  exr:naam "Uitgeklaard: de oorlog in Oekraïne";
+  exr:niveau <http://example.org/Niveau/S-gr1>, <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>,
+    <http://example.org/Niveau/S-lj7>;
+  exr:onderwerp <http://example.org/Onderwerp/SC_8>;
+  exr:type "Videocollectie";
+  skos:notation "uitgeklaard:-de-oorlog-i-eb4b" .
+
+<http://example.org/Leermiddel/waco-natuurwetenschappen-836c> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "WACO Natuurwetenschappen 3";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "waco-natuurwetenschappen-836c" .
+
+<http://example.org/Leermiddel/waco-natuurwetenschappen-8386> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "WACO Natuurwetenschappen 4";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "waco-natuurwetenschappen-8386" .
+
+<http://example.org/Leermiddel/waco-natuurwetenschappen-83a0> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "WACO Natuurwetenschappen 5";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "waco-natuurwetenschappen-83a0" .
+
+<http://example.org/Leermiddel/waco-natuurwetenschappen-83ba> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "WACO Natuurwetenschappen 6";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "waco-natuurwetenschappen-83ba" .
+
+<http://example.org/Leermiddel/wezo-3-2u-b8a> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "WEZO 3 2u";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "wezo-3-2u-b8a" .
+
+<http://example.org/Leermiddel/wezo-4-1u-voor-niet-stem-e37f> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "WEZO 4 1u voor niet-STEM richtingen";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "wezo-4-1u-voor-niet-stem-e37f" .
+
+<http://example.org/Leermiddel/wezo-4-1u-voor-stem-rich-a6d8> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "WEZO 4 1u voor STEM richtingen";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "wezo-4-1u-voor-stem-rich-a6d8" .
+
+<http://example.org/Leermiddel/wezo-5-1u-b8e> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "WEZO 5 1u";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "wezo-5-1u-b8e" .
+
+<http://example.org/Leermiddel/wezo-6-1u-b94> a ex:Leermiddel;
+  exr:bron "Plantyn";
+  exr:naam "WEZO 6 1u";
+  exr:onderwerp <http://example.org/Onderwerp/SC_6>;
+  exr:type "Methode";
+  skos:notation "wezo-6-1u-b94" .
+
+<http://example.org/Leerplan/GO_BK%26BL> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/BK>, <http://example.org/Niveau/BL>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  rdfs:label "Ontwikkelingsdoelen van het buitengewoon onderwijs - buitgengewoon basisonderwijs";
+  skos:notation "GO_BK&BL" .
+
+<http://example.org/Leerplan/GO_DKO-gr1> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/DKO-gr1>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  rdfs:label "Leerplannen van het deeltijds kunstonderwijs - eerste graad";
+  skos:notation "GO_DKO-gr1" .
+
+<http://example.org/Leerplan/GO_DKO-gr2> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/DKO-gr2>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  rdfs:label "Leerplannen van het deeltijds kunstonderwijs - tweede graad";
+  skos:notation "GO_DKO-gr2" .
+
+<http://example.org/Leerplan/GO_DKO-gr3> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/DKO-gr3>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  rdfs:label "Leerplannen van het deeltijds kunstonderwijs - derde graad", "Leerplannen van het deeltijds kunstonderwijs - kortlopend";
+  skos:notation "GO_DKO-gr3" .
+
+<http://example.org/Leerplan/GO_DKO-gr4> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/DKO-gr4>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  rdfs:label "Leerplannen van het deeltijds kunstonderwijs - vierde graad";
+  skos:notation "GO_DKO-gr4" .
+
+<http://example.org/Leerplan/GO_K%26L> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/K>, <http://example.org/Niveau/L>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  rdfs:label "Leerplannen van het basisonderwijs";
+  skos:notation "GO_K&L" .
+
+<http://example.org/Leerplan/GO_S-gr1-A> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr1-A>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  rdfs:label "Leerplannen van de eerste graad secundair onderwijs - A-stroom";
+  skos:notation "GO_S-gr1-A" .
+
+<http://example.org/Leerplan/GO_S-gr1-B> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr1-B>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  rdfs:label "Leerplannen van de eerste graad secundair onderwijs - B-stroom";
+  skos:notation "GO_S-gr1-B" .
+
+<http://example.org/Leerplan/GO_S-gr2-AF> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr2-AF>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  rdfs:label "Leerplannen van de tweede graad secundair onderwijs - Arbeidsfinaliteit";
+  skos:notation "GO_S-gr2-AF" .
+
+<http://example.org/Leerplan/GO_S-gr2-DoF> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr2-DoF>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  rdfs:label "Leerplannen van de tweede graad secundair onderwijs - Doorstroomfinaliteit";
+  skos:notation "GO_S-gr2-DoF" .
+
+<http://example.org/Leerplan/GO_S-gr2-DuF> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr2-DuF>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  rdfs:label "Leerplannen van de tweede graad secundair onderwijs - Dubbele finaliteit";
+  skos:notation "GO_S-gr2-DuF" .
+
+<http://example.org/Leerplan/GO_S-gr3-AF> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr3-AF>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  rdfs:label "Leerplannen van de derde graad secundair onderwijs - Arbeidsfinaliteit";
+  skos:notation "GO_S-gr3-AF" .
+
+<http://example.org/Leerplan/GO_S-gr3-DoF> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr3-DoF>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  rdfs:label "Leerplannen van de derde graad secundair onderwijs - Doorstroomfinaliteit";
+  skos:notation "GO_S-gr3-DoF" .
+
+<http://example.org/Leerplan/GO_S-gr3-DuF> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr3-DuF>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  rdfs:label "Leerplannen van de derde graad secundair onderwijs - Dubbele finaliteit";
+  skos:notation "GO_S-gr3-DuF" .
+
+<http://example.org/Leerplan/GO_V> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/V>;
+  exr:organisatie <http://example.org/Organisatie/GO>;
+  rdfs:label "Opleidingsprofielen van het volwassenenonderwijs";
+  skos:notation "GO_V" .
+
+<http://example.org/Leerplan/KaO_K%26L> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/K>, <http://example.org/Niveau/L>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  rdfs:label "Leerplan van het basisonderwijs";
+  skos:notation "KaO_K&L" .
+
+<http://example.org/Leerplan/KaO_S-gr1-A> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr1-A>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  rdfs:label "Leerplannen van de eerste graad secundair onderwijs - A-stroom";
+  skos:notation "KaO_S-gr1-A" .
+
+<http://example.org/Leerplan/KaO_S-gr1-B> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr1-B>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  rdfs:label "Leerplannen van de eerste graad secundair onderwijs - B-stroom";
+  skos:notation "KaO_S-gr1-B" .
+
+<http://example.org/Leerplan/KaO_S-gr2-AF> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr2-AF>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  rdfs:label "Leerplannen van de tweede graad secundair onderwijs - Arbeidsfinaliteit";
+  skos:notation "KaO_S-gr2-AF" .
+
+<http://example.org/Leerplan/KaO_S-gr2-DoF> a ex:Leerplan;
+  exr:collectie <http://example.org/Collectie/DT-BK_S-gr2>, <http://example.org/Collectie/DT-CD_S-gr2>,
+    <http://example.org/Collectie/DT-ET_S-gr2-DoF>;
+  exr:niveau <http://example.org/Niveau/S-gr2-DoF>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  rdfs:label "Leerplannen van de tweede graad secundair onderwijs - Doorstroomfinaliteit";
+  skos:notation "KaO_S-gr2-DoF" .
+
+<http://example.org/Leerplan/KaO_S-gr2-DuF> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr2-DuF>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  rdfs:label "Leerplannen van de tweede graad secundair onderwijs - Dubbele finaliteit";
+  skos:notation "KaO_S-gr2-DuF" .
+
+<http://example.org/Leerplan/KaO_S-gr3-AF> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr3-AF>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  rdfs:label "Leerplannen van de derde graad secundair onderwijs - Arbeidsfinaliteit";
+  skos:notation "KaO_S-gr3-AF" .
+
+<http://example.org/Leerplan/KaO_S-gr3-DoF> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr3-DoF>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  rdfs:label "Leerplannen van de derde graad secundair onderwijs - Doorstroomfinaliteit";
+  skos:notation "KaO_S-gr3-DoF" .
+
+<http://example.org/Leerplan/KaO_S-gr3-DuF> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr3-DuF>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  rdfs:label "Leerplannen van de derde graad secundair onderwijs - Dubbele finaliteit";
+  skos:notation "KaO_S-gr3-DuF" .
+
+<http://example.org/Leerplan/KaO_S-lj7> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-lj7>;
+  exr:organisatie <http://example.org/Organisatie/KaO>;
+  rdfs:label "Leerplannen van het 7de leerjaar secundair onderwijs";
+  skos:notation "KaO_S-lj7" .
+
+<http://example.org/Leerplan/OVSG_DKO> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/DKO>;
+  exr:organisatie <http://example.org/Organisatie/OVSG>;
+  rdfs:label "Leerplannen van het deeltijds kunstonderwijs";
+  skos:notation "OVSG_DKO" .
+
+<http://example.org/Leerplan/OVSG_K%26L> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/K>, <http://example.org/Niveau/L>;
+  exr:organisatie <http://example.org/Organisatie/OVSG>;
+  rdfs:label "Leerplan van het basisonderwijs";
+  skos:notation "OVSG_K&L" .
+
+<http://example.org/Leerplan/OVSG_S-gr1-A-lj1> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr1-A-lj1>;
+  exr:organisatie <http://example.org/Organisatie/OVSG>;
+  rdfs:label "Leerplannen van het secundair onderwijs - eerste graad - A-stroom - Basisvorming";
+  skos:notation "OVSG_S-gr1-A-lj1" .
+
+<http://example.org/Leerplan/OVSG_S-gr1-A-lj2> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr1-A-lj2>;
+  exr:organisatie <http://example.org/Organisatie/OVSG>;
+  rdfs:label "Leerplannen van het secundair onderwijs - eerste graad - A-stroom - Basisopties";
+  skos:notation "OVSG_S-gr1-A-lj2" .
+
+<http://example.org/Leerplan/OVSG_S-gr1-B-lj1> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr1-B-lj1>;
+  exr:organisatie <http://example.org/Organisatie/OVSG>;
+  rdfs:label "Leerplannen van het secundair onderwijs - eerste graad - B-stroom - Basisvorming";
+  skos:notation "OVSG_S-gr1-B-lj1" .
+
+<http://example.org/Leerplan/OVSG_S-gr1-B-lj2> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr1-B-lj2>;
+  exr:organisatie <http://example.org/Organisatie/OVSG>;
+  rdfs:label "Leerplannen van het secundair onderwijs - eerste graad - B-stroom - Basisopties";
+  skos:notation "OVSG_S-gr1-B-lj2" .
+
+<http://example.org/Leerplan/OVSG_S-gr2-AF> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr2-AF>;
+  exr:organisatie <http://example.org/Organisatie/OVSG>;
+  rdfs:label "Leerplannen van het secundair onderwijs - tweede graad - arbeidsmarktfinaliteit";
+  skos:notation "OVSG_S-gr2-AF" .
+
+<http://example.org/Leerplan/OVSG_S-gr2-DoF> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr2-DoF>;
+  exr:organisatie <http://example.org/Organisatie/OVSG>;
+  rdfs:label "Leerplannen van het secundair onderwijs - tweede graad - doorstroomfinaliteit";
+  skos:notation "OVSG_S-gr2-DoF" .
+
+<http://example.org/Leerplan/OVSG_S-gr2-DuF> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr2-DuF>;
+  exr:organisatie <http://example.org/Organisatie/OVSG>;
+  rdfs:label "Leerplannen van het secundair onderwijs - tweede graad - dubbele finaliteit";
+  skos:notation "OVSG_S-gr2-DuF" .
+
+<http://example.org/Leerplan/OVSG_S-gr3> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OVSG>;
+  rdfs:label "Leerplannen van het secundair onderwijs - 3de graad";
+  skos:notation "OVSG_S-gr3" .
+
+<http://example.org/Leerplan/VOV_SV> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/SV>;
+  exr:organisatie <http://example.org/Organisatie/GO>, <http://example.org/Organisatie/KaO>,
+    <http://example.org/Organisatie/OVSG>, <http://example.org/Organisatie/PO>;
+  rdfs:label "Leerplannen van het secundair volwassenenonderwijs";
+  skos:notation "VOV_SV" .
+
+<http://example.org/Leerplan/VOV_V-B> a ex:Leerplan;
+  exr:niveau <http://example.org/Niveau/V-B>;
+  exr:organisatie <http://example.org/Organisatie/KaO>, <http://example.org/Organisatie/VOV>;
+  rdfs:label "Leerplannen van de basiseducatie";
+  skos:notation "VOV_V-B" .
+
+<http://example.org/Niveau/BK> a ex:Niveau;
+  rdfs:label "Buitengewoon kleuteronderwijs";
+  skos:notation "BK" .
+
+<http://example.org/Niveau/BL> a ex:Niveau;
+  rdfs:label "Buitengewoon lager onderwijs";
+  skos:notation "BL" .
+
+<http://example.org/Niveau/BS> a ex:Niveau;
+  rdfs:label "Buitengewoon secundair onderwijs";
+  skos:notation "BS" .
+
+<http://example.org/Niveau/BS-OV1> a ex:Niveau;
+  rdfs:label "Buitengewoon secundair onderwijs - Opleidingsvorm 1";
+  skos:broader <http://example.org/Niveau/BS>;
+  skos:notation "BS-OV1" .
+
+<http://example.org/Niveau/BS-OV2> a ex:Niveau;
+  rdfs:label "Buitengewoon secundair onderwijs - Opleidingsvorm 2";
+  skos:broader <http://example.org/Niveau/BS>;
+  skos:notation "BS-OV2" .
+
+<http://example.org/Niveau/BS-OV3> a ex:Niveau;
+  rdfs:label "Buitengewoon secundair onderwijs - Opleidingsvorm 3";
+  skos:broader <http://example.org/Niveau/BS>;
+  skos:notation "BS-OV3" .
+
+<http://example.org/Niveau/BS-OV4> a ex:Niveau;
+  rdfs:label "Buitengewoon secundair onderwijs - Opleidingsvorm 4";
+  skos:broader <http://example.org/Niveau/BS>;
+  skos:notation "BS-OV4" .
+
+<http://example.org/Niveau/DKO> a ex:Niveau;
+  rdfs:label "Deeltijds kunstonderwijs";
+  skos:notation "DKO" .
+
+<http://example.org/Niveau/DKO-gr1> a ex:Niveau;
+  rdfs:label "Deeltijds kunstonderwijs - 1ste graad";
+  skos:broader <http://example.org/Niveau/DKO>;
+  skos:notation "DKO-gr1" .
+
+<http://example.org/Niveau/DKO-gr2> a ex:Niveau;
+  rdfs:label "Deeltijds kunstonderwijs - 2de graad";
+  skos:broader <http://example.org/Niveau/DKO>;
+  skos:notation "DKO-gr2" .
+
+<http://example.org/Niveau/DKO-gr3> a ex:Niveau;
+  rdfs:label "Deeltijds kunstonderwijs - 3de graad";
+  skos:broader <http://example.org/Niveau/DKO>;
+  skos:notation "DKO-gr3" .
+
+<http://example.org/Niveau/DKO-gr4> a ex:Niveau;
+  rdfs:label "Deeltijds kunstonderwijs - 4de graad";
+  skos:broader <http://example.org/Niveau/DKO>;
+  skos:notation "DKO-gr4" .
+
+<http://example.org/Niveau/H> a ex:Niveau;
+  rdfs:label "Hoger onderwijs";
+  skos:notation "H" .
+
+<http://example.org/Niveau/K> a ex:Niveau;
+  rdfs:label "Kleuteronderwijs";
+  skos:notation "K" .
+
+<http://example.org/Niveau/L> a ex:Niveau;
+  rdfs:label "Lager onderwijs";
+  skos:notation "L" .
+
+<http://example.org/Niveau/L-5lj> a ex:Niveau;
+  rdfs:label "Lager onderwijs - 5de leerjaar";
+  skos:broader <http://example.org/Niveau/L>;
+  skos:notation "L-5lj" .
+
+<http://example.org/Niveau/L-6lj> a ex:Niveau;
+  rdfs:label "Lager onderwijs - 6de leerjaar";
+  skos:broader <http://example.org/Niveau/L>;
+  skos:notation "L-6lj" .
+
+<http://example.org/Niveau/OKAN> a ex:Niveau;
+  rdfs:label "Onthaalklas voor anderstalige nieuwkomers";
+  skos:notation "OKAN" .
+
+<http://example.org/Niveau/S> a ex:Niveau;
+  rdfs:label "Secundair onderwijs";
+  skos:notation "S" .
+
+<http://example.org/Niveau/S-gr1> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 1ste graad";
+  skos:broader <http://example.org/Niveau/S>;
+  skos:notation "S-gr1" .
+
+<http://example.org/Niveau/S-gr1-A> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 1ste graad - A-stroom";
+  skos:broader <http://example.org/Niveau/S-gr1>;
+  skos:notation "S-gr1-A" .
+
+<http://example.org/Niveau/S-gr1-A-lj1> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 1ste graad - A-stroom - 1ste leerjaar";
+  skos:broader <http://example.org/Niveau/S-gr1-A>;
+  skos:notation "S-gr1-A-lj1" .
+
+<http://example.org/Niveau/S-gr1-A-lj2> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 1ste graad - A-stroom - 2de leerjaar";
+  skos:broader <http://example.org/Niveau/S-gr1-A>;
+  skos:notation "S-gr1-A-lj2" .
+
+<http://example.org/Niveau/S-gr1-B> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 1ste graad - B-stroom";
+  skos:broader <http://example.org/Niveau/S-gr1>;
+  skos:notation "S-gr1-B" .
+
+<http://example.org/Niveau/S-gr1-B-lj1> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 1ste graad - B-stroom - 1ste leerjaar";
+  skos:broader <http://example.org/Niveau/S-gr1-B>;
+  skos:notation "S-gr1-B-lj1" .
+
+<http://example.org/Niveau/S-gr1-B-lj2> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 1ste graad - B-stroom - 2de leerjaar";
+  skos:broader <http://example.org/Niveau/S-gr1-B>;
+  skos:notation "S-gr1-B-lj2" .
+
+<http://example.org/Niveau/S-gr2> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 2de graad";
+  skos:notation "S-gr2" .
+
+<http://example.org/Niveau/S-gr2-AF> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 2de graad - arbeidsfinaliteit";
+  skos:broader <http://example.org/Niveau/S-gr2>;
+  skos:notation "S-gr2-AF" .
+
+<http://example.org/Niveau/S-gr2-DoF> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 2de graad - doorstroomfinaliteit";
+  skos:broader <http://example.org/Niveau/S-gr2>;
+  skos:notation "S-gr2-DoF" .
+
+<http://example.org/Niveau/S-gr2-DuF> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 2de graad - dubbele finaliteit";
+  skos:broader <http://example.org/Niveau/S-gr2>;
+  skos:notation "S-gr2-DuF" .
+
+<http://example.org/Niveau/S-gr3> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 3de graad";
+  skos:notation "S-gr3" .
+
+<http://example.org/Niveau/S-gr3-AF> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 3de graad - arbeidsfinaliteit";
+  skos:broader <http://example.org/Niveau/S-gr3>;
+  skos:notation "S-gr3-AF" .
+
+<http://example.org/Niveau/S-gr3-DoF> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 3de graad - doorstroomfinaliteit";
+  skos:broader <http://example.org/Niveau/S-gr3>;
+  skos:notation "S-gr3-DoF" .
+
+<http://example.org/Niveau/S-gr3-DuF> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 3de graad - dubbele finaliteit";
+  skos:broader <http://example.org/Niveau/S-gr3>;
+  skos:notation "S-gr3-DuF" .
+
+<http://example.org/Niveau/S-lj7> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 7de leerjaar";
+  skos:notation "S-lj7" .
+
+<http://example.org/Niveau/S-lj7-AF> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 7de leerjaar - arbeidsfinaliteit";
+  skos:broader <http://example.org/Niveau/S-lj7>;
+  skos:notation "S-lj7-AF" .
+
+<http://example.org/Niveau/S-lj7-DoF> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 7de leerjaar - doorstroomfinaliteit";
+  skos:broader <http://example.org/Niveau/S-lj7>;
+  skos:notation "S-lj7-DoF" .
+
+<http://example.org/Niveau/S-lj7-DuF> a ex:Niveau;
+  rdfs:label "Secundair onderwijs - 7de leerjaar - dubbele finaliteit";
+  skos:broader <http://example.org/Niveau/S-lj7>;
+  skos:notation "S-lj7-DuF" .
+
+<http://example.org/Niveau/SV> a ex:Niveau;
+  rdfs:label "Secundair volwassenenonderwijs";
+  skos:notation "SV" .
+
+<http://example.org/Niveau/SV-AAV> a ex:Niveau;
+  rdfs:label "Secundair volwassenenonderwijs - Aanvullende algemene vorming";
+  skos:broader <http://example.org/Niveau/SV>;
+  skos:notation "SV-AAV" .
+
+<http://example.org/Niveau/SV-BO> a ex:Niveau;
+  rdfs:label "Secundair volwassenenonderwijs - Beroepsgerichte opleidingen";
+  skos:broader <http://example.org/Niveau/SV>;
+  skos:notation "SV-BO" .
+
+<http://example.org/Niveau/SV-MG> a ex:Niveau;
+  rdfs:label "Secundair volwassenenonderwijs - modules geletterdheid";
+  skos:broader <http://example.org/Niveau/SV>;
+  skos:notation "SV-MG" .
+
+<http://example.org/Niveau/SV-gr2> a ex:Niveau;
+  rdfs:label "Secundair volwassenenonderwijs - 2de graad";
+  skos:broader <http://example.org/Niveau/SV>;
+  skos:notation "SV-gr2" .
+
+<http://example.org/Niveau/SV-gr2-AV> a ex:Niveau;
+  rdfs:label "Secundair volwassenenonderwijs - 2de graad - Algemene vorming";
+  skos:broader <http://example.org/Niveau/SV-gr2>;
+  skos:notation "SV-gr2-AV" .
+
+<http://example.org/Niveau/SV-gr3> a ex:Niveau;
+  rdfs:label "Secundair volwassenenonderwijs - 3de graad";
+  skos:notation "SV-gr3" .
+
+<http://example.org/Niveau/SV-gr3-AV> a ex:Niveau;
+  rdfs:label "Secundair volwassenenonderwijs - 3de graad - Algemene vorming";
+  skos:broader <http://example.org/Niveau/SV-gr3>;
+  skos:notation "SV-gr3-AV" .
+
+<http://example.org/Niveau/V> a ex:Niveau;
+  rdfs:label "Volwassenenonderwijs";
+  skos:broader <http://example.org/Niveau/V>;
+  skos:notation "V" .
+
+<http://example.org/Niveau/V-B> a ex:Niveau;
+  rdfs:label "Volwassenenonderwijs - Basiseducatie";
+  skos:notation "V-B" .
+
+<http://example.org/Onderwerp/CD_ADC> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "Algemene doorstroomcompetenties";
+  skos:notation "CD_ADC" .
+
+<http://example.org/Onderwerp/CD_AW> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "Aardwetenschappen";
+  skos:notation "CD_AW" .
+
+<http://example.org/Onderwerp/CD_B> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "Biologie";
+  skos:notation "CD_B" .
+
+<http://example.org/Onderwerp/CD_BW> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "Bewegingswetenschappen";
+  skos:notation "CD_BW" .
+
+<http://example.org/Onderwerp/CD_C> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "Chemie";
+  skos:notation "CD_C" .
+
+<http://example.org/Onderwerp/CD_E> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "Economie", "Economie en organisatie";
+  skos:notation "CD_E" .
+
+<http://example.org/Onderwerp/CD_F> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "Filosofie";
+  skos:notation "CD_F" .
+
+<http://example.org/Onderwerp/CD_Fy> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "Fysica";
+  skos:notation "CD_Fy" .
+
+<http://example.org/Onderwerp/CD_GW> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "Gedragswetenscahppen";
+  skos:notation "CD_GW" .
+
+<http://example.org/Onderwerp/CD_ICT> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "Informaticawetenschappen";
+  skos:notation "CD_ICT" .
+
+<http://example.org/Onderwerp/CD_KC> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "Kunst en cultuur";
+  skos:notation "CD_KC" .
+
+<http://example.org/Onderwerp/CD_KT> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "Klassieke talen";
+  skos:notation "CD_KT" .
+
+<http://example.org/Onderwerp/CD_MT> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "Moderne talen";
+  skos:notation "CD_MT" .
+
+<http://example.org/Onderwerp/CD_STEM> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "STEM";
+  skos:notation "CD_STEM" .
+
+<http://example.org/Onderwerp/CD_SW> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "Sociale wetenschappen";
+  skos:notation "CD_SW" .
+
+<http://example.org/Onderwerp/CD_W> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>, <http://example.org/Niveau/S-lj7>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Cesuurdoelen/Specifieke eindtermen";
+  rdfs:label "Wiskunde";
+  skos:notation "CD_W" .
+
+<http://example.org/Onderwerp/OD_B> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/BS-OV3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Ontwikkelingsdoelen";
+  rdfs:label "Burgerzin";
+  skos:notation "OD_B" .
+
+<http://example.org/Onderwerp/OD_G> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/BS-OV3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Ontwikkelingsdoelen";
+  rdfs:label "Gezondheidseducatie";
+  skos:notation "OD_G" .
+
+<http://example.org/Onderwerp/OD_ICT> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/BS-OV3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Ontwikkelingsdoelen";
+  rdfs:label "ICT";
+  skos:notation "OD_ICT" .
+
+<http://example.org/Onderwerp/OD_LL> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/BS-OV3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Ontwikkelingsdoelen";
+  rdfs:label "Leren leren";
+  skos:notation "OD_LL" .
+
+<http://example.org/Onderwerp/OD_LO> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/BS-OV3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Ontwikkelingsdoelen";
+  rdfs:label "Lichamelijke opvoeding";
+  skos:notation "OD_LO" .
+
+<http://example.org/Onderwerp/OD_ME> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/BS-OV3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Ontwikkelingsdoelen";
+  rdfs:label "Milieueducatie";
+  skos:notation "OD_ME" .
+
+<http://example.org/Onderwerp/OD_RV> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/BS-OV3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Ontwikkelingsdoelen";
+  rdfs:label "Rekenvaardigheden";
+  skos:notation "OD_RV" .
+
+<http://example.org/Onderwerp/OD_SEE> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/BS-OV3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Ontwikkelingsdoelen";
+  rdfs:label "Sociaal-emotionele educatie";
+  skos:notation "OD_SEE" .
+
+<http://example.org/Onderwerp/OD_TV> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/BS-OV3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Ontwikkelingsdoelen";
+  rdfs:label "Taalvaardigheid";
+  skos:notation "OD_TV" .
+
+<http://example.org/Onderwerp/OD_VTV> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/BS-OV3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Ontwikkelingsdoelen";
+  rdfs:label "Vrijetijdsvaardigheden";
+  skos:notation "OD_VTV" .
+
+<http://example.org/Onderwerp/SC_1> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr1>, <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Lichamelijke en geestelijke gezondheid";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Competenties op het vlak van lichamelijk, geestelijk en emotioneel bewustzijn en op vlak van lichamelijke, geestelijke en emotionele gezondheid";
+  skos:notation "SC_1" .
+
+<http://example.org/Onderwerp/SC_10> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr1>, <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Duurzaamheid";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Competenties inzake duurzaamheid";
+  skos:notation "SC_10" .
+
+<http://example.org/Onderwerp/SC_11> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr1>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Economische en financiële competenties";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Economische en financiële competenties";
+  skos:notation "SC_11" .
+
+<http://example.org/Onderwerp/SC_12> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr1>, <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Juridische competenties";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Juridische competenties";
+  skos:notation "SC_12" .
+
+<http://example.org/Onderwerp/SC_13> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/BS-OV3>, <http://example.org/Niveau/S>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Leercompetenties";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Leercompetenties met inbegrip van onderzoekscompetenties, innovatiedenken, creativiteit, probleemoplossend en kritisch denken, systeemdenken, informatieverwerking en samenwerken";
+  skos:notation "SC_13" .
+
+<http://example.org/Onderwerp/SC_14> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr1>, <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Zelfbewustzijn";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Zelfbewustzijn en zelfexpressie, zelfsturing en wendbaarheid";
+  skos:notation "SC_14" .
+
+<http://example.org/Onderwerp/SC_15> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Ondernemingszin";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Ontwikkeling van initiatief, ambitie, ondernemingszin en loopbaancompetenties";
+  skos:notation "SC_15" .
+
+<http://example.org/Onderwerp/SC_16> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr1>, <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Cultureel bewustzijn";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Cultureel bewustzijn en culturele expressie";
+  skos:notation "SC_16" .
+
+<http://example.org/Onderwerp/SC_2> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Nederlands";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Competenties in het Nederlands";
+  skos:notation "SC_2" .
+
+<http://example.org/Onderwerp/SC_3> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Andere talen";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Competenties in andere talen";
+  skos:notation "SC_3" .
+
+<http://example.org/Onderwerp/SC_4> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr1>, <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Digitale competenties";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Digitale competentie en mediawijsheid";
+  skos:notation "SC_4" .
+
+<http://example.org/Onderwerp/SC_5> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr1>, <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Sociaal-relationele competenties";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Sociaal-relationele competenties";
+  skos:notation "SC_5" .
+
+<http://example.org/Onderwerp/SC_6> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Wiskunde - natuurwetenschappen - technologie - STEM";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Competenties inzake wiskunde, exacte wetenschappen en technologie";
+  skos:notation "SC_6" .
+
+<http://example.org/Onderwerp/SC_7> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr1>, <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Burgerschap";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Burgerschapscompetenties met inbegrip van competenties inzake samenleven";
+  skos:notation "SC_7" .
+
+<http://example.org/Onderwerp/SC_8> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr1>, <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Historisch bewustzijn";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Competenties met betrekking tot historisch bewustzijn";
+  skos:notation "SC_8" .
+
+<http://example.org/Onderwerp/SC_9> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr1>, <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Ruimtelijk bewustzijn";
+  exr:type "Sleutelcompetentie";
+  rdfs:label "Competenties met betrekking tot ruimtelijk bewustzijn";
+  skos:notation "SC_9" .
+
+<http://example.org/Onderwerp/SD_DO> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2-DoF>, <http://example.org/Niveau/S-gr3-DoF>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Studiedomein";
+  rdfs:label "Domeinoverschrijdend";
+  skos:notation "SD_DO" .
+
+<http://example.org/Onderwerp/SD_EO> exr:niveau <http://example.org/Niveau/S-gr2>,
+    <http://example.org/Niveau/S-gr3>;
+  a ex:Onderwerp;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Studiedomein";
+  rdfs:label "Economie en organisatie";
+  skos:notation "SD_EO" .
+
+<http://example.org/Onderwerp/SD_KC> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Studiedomein";
+  rdfs:label "Kunst en creatie";
+  skos:notation "SD_KC" .
+
+<http://example.org/Onderwerp/SD_LT> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Studiedomein";
+  rdfs:label "Land- en tuinbouw";
+  skos:notation "SD_LT" .
+
+<http://example.org/Onderwerp/SD_MW> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Studiedomein";
+  rdfs:label "Maatschappij en welzijn";
+  skos:notation "SD_MW" .
+
+<http://example.org/Onderwerp/SD_S> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2-AF>, <http://example.org/Niveau/S-gr2-DuF>,
+    <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Studiedomein";
+  rdfs:label "Sport";
+  skos:notation "SD_S" .
+
+<http://example.org/Onderwerp/SD_STEM> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Studiedomein";
+  rdfs:label "Stem";
+  skos:notation "SD_STEM" .
+
+<http://example.org/Onderwerp/SD_TC> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2-AF>, <http://example.org/Niveau/S-gr2-DuF>,
+    <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Studiedomein";
+  rdfs:label "Taal en cultuur";
+  skos:notation "SD_TC" .
+
+<http://example.org/Onderwerp/SD_VH> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/S-gr2>, <http://example.org/Niveau/S-gr3>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Studiedomein";
+  rdfs:label "Voeding en horeca";
+  skos:notation "SD_VH" .
+
+<http://example.org/Onderwerp/SR_EW> a ex:Onderwerp;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Studierichting";
+  rdfs:label "Economische wetenschappen";
+  skos:notation "SR_EW" .
+
+<http://example.org/Onderwerp/SR_GL> a ex:Onderwerp;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Studierichting";
+  rdfs:label "Grieks-Latijn";
+  skos:notation "SR_GL" .
+
+<http://example.org/Onderwerp/SR_L> a ex:Onderwerp;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Studierichting";
+  rdfs:label "Latijn";
+  skos:notation "SR_L" .
+
+<http://example.org/Onderwerp/SR_NW> a ex:Onderwerp;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Studierichting";
+  rdfs:label "Natuurwetenschappen";
+  skos:notation "SR_NW" .
+
+<http://example.org/Onderwerp/SR_TW> a ex:Onderwerp;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:type "Studierichting";
+  rdfs:label "Technologische wetenschappen";
+  skos:notation "SR_TW" .
+
+<http://example.org/Onderwerp/VD_A> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/K>, <http://example.org/Niveau/L>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Aardrijkskunde";
+  exr:type "Vakdiscipline";
+  rdfs:label "Aardrijkskunde";
+  skos:notation "VD_A" .
+
+<http://example.org/Onderwerp/VD_At> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/K>, <http://example.org/Niveau/L>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Attitudes";
+  exr:type "Vakdiscipline";
+  rdfs:label "Attitudes, waaronder persoonvormende en socialiserende vaardigheden, leren leren en leerondersteunende vaardigheden";
+  skos:notation "VD_At" .
+
+<http://example.org/Onderwerp/VD_Fr> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/L-lj5>, <http://example.org/Niveau/L-lj6>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Frans";
+  exr:type "Vakdiscipline";
+  rdfs:label "Frans";
+  skos:notation "VD_Fr" .
+
+<http://example.org/Onderwerp/VD_G> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/K>, <http://example.org/Niveau/L>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Geschiedenis";
+  exr:type "Vakdiscipline";
+  rdfs:label "Geschiedenis";
+  skos:notation "VD_G" .
+
+<http://example.org/Onderwerp/VD_ICT> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/L>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "ICT";
+  exr:type "Vakdiscipline";
+  rdfs:label "ICT";
+  skos:notation "VD_ICT" .
+
+<http://example.org/Onderwerp/VD_LO> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/K>, <http://example.org/Niveau/L>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Lichamelijke opvoeding";
+  exr:type "Vakdiscipline";
+  rdfs:label "Lichamelijke opvoeding";
+  skos:notation "VD_LO" .
+
+<http://example.org/Onderwerp/VD_MV> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/K>, <http://example.org/Niveau/L>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Muzische vorming";
+  exr:type "Vakdiscipline";
+  rdfs:label "Muzische vorming";
+  skos:notation "VD_MV" .
+
+<http://example.org/Onderwerp/VD_Nl> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/K>, <http://example.org/Niveau/L>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Nederlands";
+  exr:type "Vakdiscipline";
+  rdfs:label "Nederlands";
+  skos:notation "VD_Nl" .
+
+<http://example.org/Onderwerp/VD_W> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/K>, <http://example.org/Niveau/L>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Wiskunde";
+  exr:type "Vakdiscipline";
+  rdfs:label "Wiskunde";
+  skos:notation "VD_W" .
+
+<http://example.org/Onderwerp/VD_WT> a ex:Onderwerp;
+  exr:niveau <http://example.org/Niveau/K>, <http://example.org/Niveau/L>;
+  exr:organisatie <http://example.org/Organisatie/OV>;
+  exr:shortLabel "Wetenschap en techniek";
+  exr:type "Vakdiscipline";
+  rdfs:label "Wetenschap en techniek";
+  skos:notation "VD_WT" .
+
+<http://example.org/Organisatie/GO> a ex:Organisatie;
+  rdfs:label "GO!";
+  skos:notation "GO" .
+
+<http://example.org/Organisatie/KaO> a ex:Organisatie;
+  rdfs:label "Katholiek Onderwijs Vlaanderen";
+  skos:notation "KaO" .
+
+<http://example.org/Organisatie/OV> a ex:Organisatie;
+  rdfs:label "AHOVOKS";
+  skos:notation "OV" .
+
+<http://example.org/Organisatie/OVSG> a ex:Organisatie;
+  rdfs:label "OVSG";
+  skos:notation "OVSG" .
+
+<http://example.org/Organisatie/PO> a ex:Organisatie;
+  rdfs:label "PO";
+  skos:notation "PO" .
+
+<http://example.org/Organisatie/VOV> a ex:Organisatie;
+  rdfs:label "VOV";
+  skos:notation "VOV" .
