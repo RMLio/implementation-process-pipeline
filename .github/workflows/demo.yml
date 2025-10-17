@@ -32,10 +32,6 @@ jobs:
         run: echo "Generating Excel template."
       - name: Create output directory
         run: mkdir -p output
-      - name: Generate RDF
-        uses: RMLio/rml-action@v1.0.0
-        with:
-          global-pattern: "*.yml"
-          serialization-format: turtle
-          output-directory: output
+      - name: "[Placeholder] Generate RDF"
+        run: echo "Putting dummy data in output directory" && curl -L https://work.de-meester.org/assets/2025/output.ttl -o output/data.ttl
 
