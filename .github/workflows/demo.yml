@@ -50,7 +50,7 @@ jobs:
           node-version: 22
       - name: Build Miravi website
         run: |
-          cd miravi-a-linked-data-viewer
+          cd miravi-a-linked-data-viewer/main
           npm i
           node scripts/select-config.cjs demo
           npm run build
