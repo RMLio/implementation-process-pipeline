@@ -12,6 +12,7 @@ This template repo helps with setting up a pipeline for an OSLO implementation p
 1. [Create a new repository based on this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 2. Set the link to the application profile at `env.ap_url` in the file `.github/workflows/demo.yml`.
 3. Set the link to the SHACL at `env.shacl_url` in the file `.github/workflows/demo.yml`.
+4. TODO: add instructions on how to set up GitHub pages (points to `docs`)
 
 ## Adding data via an Excel file
 
