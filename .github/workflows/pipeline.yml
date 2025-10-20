@@ -1,5 +1,5 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: Implementation process pipeline
+run-name: ${{ github.actor }} is running the pipeline
 on: [push]
 
 env:
@@ -7,23 +7,20 @@ env:
   shacl_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/shacl/leermiddelen-ap-SHACL.ttl
 
 jobs:
-  Explore-GitHub-Actions:
+  Set-Up-Repo:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v5
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: Download SHACL if needed
-        run: ./download-shacl.sh $shacl_url
+        run: ./scripts/download-shacl.sh $shacl_url
       - uses: EndBug/add-and-commit@v9
         with:
           add: shacl.ttl
           message: "Add SHACL"
       - name: Add AP and SHACL links to README
-        run: ./update-readme.sh $ap_url $shacl_url
+        run: ./scripts/update-readme.sh $ap_url $shacl_url
       - uses: EndBug/add-and-commit@v9
         with:
           add: README.md original-README.md
@@ -32,12 +29,26 @@ jobs:
         run: echo "Generating Excel template."
       - name: Create output directory
         run: mkdir -p output
+
+  Generate-RDF:
+    runs-on: ubuntu-latest
+    needs: Set-Up-Repo
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
       - name: "[Placeholder] Generate RDF"
         run: echo "Putting dummy data in output directory" && curl -L https://work.de-meester.org/assets/2025/output.ttl -o output/data.ttl
       - uses: EndBug/add-and-commit@v9
         with:
           add: output/data.ttl
           message: "Add generated RDF"
+
+  Build-Miravi:
+    runs-on: ubuntu-latest
+    needs: Generate-RDF
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
       - name: Clone Miravi repository
         uses: actions/checkout@v5
         with:

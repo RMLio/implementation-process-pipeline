@@ -7,7 +7,7 @@ This template repo helps with setting up a pipeline for an OSLO implementation p
 
 ## Usage
 
-## Setting up this repository
+### Setting up this repository
 
 You only have to do these steps once.
 
@@ -16,7 +16,7 @@ You only have to do these steps once.
 3. Set the link to the SHACL at `env.shacl_url` in the file `.github/workflows/demo.yml`.
 4. TODO: add instructions on how to set up GitHub pages (points to `docs`)
 
-## Adding data via an Excel file
+### Adding data via an Excel file
 
 1. Download the Excel template called `template.xlsx`.
    TODO: Add clearer instructions.
@@ -25,7 +25,7 @@ You only have to do these steps once.
 4. Upload the Excel to the repository.
    TODO: Add clearer instructions.
 
-## Updating data in an Excel file
+### Updating data in an Excel file
 
 1. Download the Excel file that you want to update.
    TODO: Add clearer instructions.
@@ -33,10 +33,18 @@ You only have to do these steps once.
 3. Upload the Excel to the repository.
    TODO: Add clearer instructions.
 
-## Execute queries via the dashboard
+### Execute queries via the dashboard
 
 1. Browse to the GitHub pages of this repository.
 2. TODO: Add Miravi specific instructions
+
+## Extras
+
+- You can reset the README.md via 
+
+  ```shell
+  ./scripts/reset-readme.sh
+  ```
 
 ## License
 
