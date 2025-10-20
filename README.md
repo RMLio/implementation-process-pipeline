@@ -46,6 +46,8 @@ You only have to do these steps once.
   ./scripts/reset-readme.sh
   ```
 
+- Delete `shacl.ttl` to download the SHACL again.
+
 ## License
 
 TODO
