@@ -1,1 +1,87 @@
+@prefix : <http://mapping.example.com/> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix exr: <http://example.org/relation/> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 
+<http://example.org/DummyBedrijf/DUMMY_B1> a ex:DummyBedrijf;
+  exr:dummysector <http://example.org/DummySector/DUMMY_S1>;
+  rdfs:label "Bedrijf 1";
+  skos:notation "DUMMY_B1" .
+
+<http://example.org/DummyBedrijf/DUMMY_B2> a ex:DummyBedrijf;
+  exr:dummysector <http://example.org/DummySector/DUMMY_S1>, <http://example.org/DummySector/DUMMY_S2>;
+  rdfs:label "Bedrijf 2";
+  skos:notation "DUMMY_B2" .
+
+<http://example.org/DummyBedrijf/DUMMY_B3> a ex:DummyBedrijf;
+  exr:dummysector <http://example.org/DummySector/DUMMY_S1>, <http://example.org/DummySector/DUMMY_S2>;
+  rdfs:label "Bedrijf 2";
+  skos:notation "DUMMY_B3" .
+
+<http://example.org/DummyGebouw/DUMMY_B1_G1> a ex:DummyGebouw;
+  exr:dummybedrijf <http://example.org/DummyBedrijf/DUMMY_B1>;
+  exr:dummysector <http://example.org/DummySector/DUMMY_S1>;
+  rdfs:label "Bedrijf 1 Gebouw 1";
+  skos:notation "DUMMY_B1_G1" .
+
+<http://example.org/DummyGebouw/DUMMY_B1_G2> a ex:DummyGebouw;
+  exr:dummybedrijf <http://example.org/DummyBedrijf/DUMMY_B1>;
+  exr:dummysector <http://example.org/DummySector/DUMMY_S1>;
+  rdfs:label "Bedrijf 1 Gebouw 2";
+  skos:notation "DUMMY_B1_G2" .
+
+<http://example.org/DummyGebouw/DUMMY_B1_G3> a ex:DummyGebouw;
+  exr:dummybedrijf <http://example.org/DummyBedrijf/DUMMY_B1>;
+  exr:dummysector <http://example.org/DummySector/DUMMY_S1>;
+  rdfs:label "Bedrijf 1 Gebouw 3";
+  skos:notation "DUMMY_B1_G3" .
+
+<http://example.org/DummyGebouw/DUMMY_B2_G1> a ex:DummyGebouw;
+  exr:dummybedrijf <http://example.org/DummyBedrijf/DUMMY_B2>;
+  exr:dummysector <http://example.org/DummySector/DUMMY_S1>;
+  rdfs:label "Bedrijf 2 Gebouw 1";
+  skos:notation "DUMMY_B2_G1" .
+
+<http://example.org/DummyGebouw/DUMMY_B2_G2> a ex:DummyGebouw;
+  exr:dummybedrijf <http://example.org/DummyBedrijf/DUMMY_B2>;
+  exr:dummysector <http://example.org/DummySector/DUMMY_S2>;
+  rdfs:label "Bedrijf 2 Gebouw 2";
+  skos:notation "DUMMY_B2_G2" .
+
+<http://example.org/DummyGebouw/DUMMY_B2_G3> a ex:DummyGebouw;
+  exr:dummybedrijf <http://example.org/DummyBedrijf/DUMMY_B2>;
+  exr:dummysector <http://example.org/DummySector/DUMMY_S2>;
+  rdfs:label "Bedrijf 2 Gebouw 3";
+  skos:notation "DUMMY_B2_G3" .
+
+<http://example.org/DummyGebouw/DUMMY_B3_G1> a ex:DummyGebouw;
+  exr:dummybedrijf <http://example.org/DummyBedrijf/DUMMY_B3>;
+  rdfs:label "Bedrijf 2 Gebouw 1";
+  skos:notation "DUMMY_B3_G1" .
+
+<http://example.org/DummyGebouw/DUMMY_B3_G2> a ex:DummyGebouw;
+  exr:dummybedrijf <http://example.org/DummyBedrijf/DUMMY_B3>;
+  rdfs:label "Bedrijf 2 Gebouw 2";
+  skos:notation "DUMMY_B3_G2" .
+
+<http://example.org/DummyGebouw/DUMMY_B3_G3> a ex:DummyGebouw;
+  exr:dummybedrijf <http://example.org/DummyBedrijf/DUMMY_B3>;
+  rdfs:label "Bedrijf 2 Gebouw 3";
+  skos:notation "DUMMY_B3_G3" .
+
+<http://example.org/DummySector/DUMMY_S1> a ex:DummySector;
+  rdfs:label "Sector 1";
+  skos:notation "DUMMY_S1" .
+
+<http://example.org/DummySector/DUMMY_S2> a ex:DummySector;
+  rdfs:label "Sector 2";
+  skos:notation "DUMMY_S2" .

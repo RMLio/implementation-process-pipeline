@@ -1,0 +1,6 @@
+# Join DummyGebouw to DummySector
+SELECT DISTINCT ?DummyGebouwIRI ?DummySectorIRI WHERE {
+  ?DummyGebouwIRI a <http://example.org/DummyGebouw> .
+  ?DummySectorIRI a <http://example.org/DummySector> .
+  ?DummyGebouwIRI <http://example.org/relation/dummysector> ?DummySectorIRI .
+}

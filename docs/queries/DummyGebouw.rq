@@ -1,0 +1,8 @@
+# DummyGebouw 
+SELECT DISTINCT ?notation ?label ?DummybedrijfIRI ?DummysectorIRI WHERE {
+  ?DummyGebouwIRI a <http://example.org/DummyGebouw> .
+  OPTIONAL { ?DummyGebouwIRI <http://www.w3.org/2004/02/skos/core#notation> ?notation . }
+  OPTIONAL { ?DummyGebouwIRI <http://www.w3.org/2000/01/rdf-schema#label> ?label . }
+  OPTIONAL { ?DummyGebouwIRI <http://example.org/relation/dummybedrijf> ?DummybedrijfIRI . }
+  OPTIONAL { ?DummyGebouwIRI <http://example.org/relation/dummysector> ?DummysectorIRI . }
+}
