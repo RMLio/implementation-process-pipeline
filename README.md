@@ -14,9 +14,14 @@ You only have to do these steps once.
 1. [Create a new repository based on this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 2. Set the link to the application profile at `env.ap_url` in the file `.github/workflows/demo.yml`.
 3. Set the link to the SHACL at `env.shacl_url` in the file `.github/workflows/demo.yml`.
-4. TODO: add instructions on how to set up GitHub pages (points to `docs`)
+4. Read and, if necessary, update [the license](LICENSE).
+5. [Set up GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
+   and let it point to the `docs` directory on the `main` branch.
 
 ### Adding data via an Excel file
+
+Note that adding data to this repository makes the data public
+and the data will have [this license](LICENSE).
 
 1. Download the Excel template called `template.xlsx`:
    1. Browse to [the template in the repository](template.xlsx).
@@ -49,6 +54,9 @@ You only have to do these steps once.
       ![Screenshot of a green button that says "Commit changes"](img/commit-changes.png)
 
 ### Updating data in an Excel file
+
+Note that adding data to this repository makes the data public
+and the data will have [this license](LICENSE).
 
 1. Download the Excel file that you want to update:
     1. Browse to Excel file that you want to update.
