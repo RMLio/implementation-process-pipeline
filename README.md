@@ -30,10 +30,10 @@ You can configure the dashboard via the following steps:
    in the root of the repo called `dashboard-config`.
 2. Update the content of `dashboard-config`.
    You find the options of the dasboard in `dashboard-config/config.json`.
-   See [this section](https://github.com/SolidLabResearch/miravi-a-linked-data-viewer?tab=readme-ov-file#configuration-file) 
+   See [this section](https://github.com/SolidLabResearch/miravi-a-linked-data-viewer?tab=readme-ov-file#configuration-file)
    for more information about the different options.
    You don't need to add the option `comunicaContext`,
-   because pipeline sets this automatically.
+   because the pipeline sets this automatically.
    You store queries in `dashboard-config/public/queries`.
 
 ### Adding data via an Excel file
