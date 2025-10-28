@@ -65,7 +65,7 @@ jobs:
       - name: Clean docs directory
         run: rm -rf docs && mkdir docs
       - name: Move Miravi dist directory to docs
-        run: mv subprojects/miravi-a-linked-data-viewer/main/dist/* docs
+        run: mv ap-data-to-dashboard/subprojects/miravi-a-linked-data-viewer/main/dist/* docs
       - uses: EndBug/add-and-commit@v9
         with:
           add: output/data.ttl
