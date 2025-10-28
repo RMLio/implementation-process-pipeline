@@ -62,7 +62,7 @@ jobs:
       - name: "Generate RDF and build Miravi"
         run: |
           cd ap-data-to-dashboard
-          ./run.sh -u https://raw.githubusercontent.com/${{ github.ref }}/refs/heads/main/output/data.ttl
+          ./run.sh -u https://raw.githubusercontent.com/${{ github.repository }}/refs/heads/main/output/data.ttl
       - name: Clean docs directory
         run: rm -rf docs && mkdir docs
       - name: Move Miravi dist directory to docs
