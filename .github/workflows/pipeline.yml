@@ -47,7 +47,7 @@ jobs:
       - name: "Copy input data to in directory"
         run: | 
           rm -rf ap-data-to-dashboard 
-          cp data/* ap-data-to-dashboard/in
+          cp data/* ap-data-to-dashboard/in/*
       - name: "Install ap-data-in-dashboard"
         run: |
           cd ap-data-to-dashboard
