@@ -5,6 +5,7 @@ on: [push]
 env:
   ap_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/
   shacl_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/shacl/leermiddelen-ap-SHACL.ttl
+  pages_url:
 
 jobs:
   Set-Up-Repo:
@@ -61,7 +62,7 @@ jobs:
       - name: "Generate RDF and build Miravi"
         run: |
           cd ap-data-to-dashboard
-          ./run.sh -u http://localhost:5500/output.ttl
+          ./run.sh -u https://raw.githubusercontent.com/${{ github.ref }}/refs/heads/main/output/data.ttl
       - name: Clean docs directory
         run: rm -rf docs && mkdir docs
       - name: Move Miravi dist directory to docs
