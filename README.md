@@ -81,7 +81,3 @@ and the data will have [this license](LICENSE).
   ```
 
 - Delete `shacl.ttl` to download the SHACL again.
-
-## License
-
-TODO
