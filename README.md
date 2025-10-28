@@ -17,6 +17,9 @@ You only have to do these steps once.
 4. Read and, if necessary, update [the license](LICENSE).
 5. [Set up GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
    and let it point to the `docs` directory on the `main` branch.
+6. Run the pipeline to make sure that everything works.
+   This run will use the dummy data in the [data](./data) directory.
+7. If everything works, empty the [data](./data) directory.
 
 ### Adding data via an Excel file
 
@@ -32,24 +35,25 @@ and the data will have [this license](LICENSE).
    for example, `ugent.xlsx` for Ghent University.
 3. Fill in your data in the Excel file.
 4. Upload the Excel to the repository.
-   1. Click on "Add file":
+   1. Navigate to the [data](./data) directory.
+   2. Click on "Add file":
 
       ![Screenshot of "Add file"](img/add-file.png)
-   2. Click on "Upload files":
+   3. Click on "Upload files":
 
       ![Screenshot of dropdown menu with "Upload files"](img/upload-files.png)
-   3. You get a page where you can upload the Excel file:
+   4. You get a page where you can upload the Excel file:
 
       ![Screenshot of the page where you can upload the Excel file](img/upload-page.png)
-   4. Upload the Excel file at the top
+   5. Upload the Excel file at the top
 
       ![Screenshot highlighting where you need to upload the Excel file](img/upload-page-2.png)
-   5. Add a message describing your changes under the header "Commit changes":
+   6. Add a message describing your changes under the header "Commit changes":
 
       ![Screenshot of the field where you need add a commit message](img/after-upload.png)
 
       This can be, for example, "Add data from UGent".
-   6. Click on the button "Commit changes":
+   7. Click on the button "Commit changes":
 
       ![Screenshot of a green button that says "Commit changes"](img/commit-changes.png)
 
