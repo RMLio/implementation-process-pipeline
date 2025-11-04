@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
-FILE=shacl.ttl
+DIR=in-shall
+FILE="$DIR/shacl.ttl"
+
+if [ -d "DIR" ]; then
+  echo "DIR already exists."
+else
+  mkdir $DIR
+fi
 
 if [[ -f "$FILE" ]]; then
   echo "$FILE already exists."

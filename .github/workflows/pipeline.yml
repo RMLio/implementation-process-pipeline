@@ -18,7 +18,7 @@ jobs:
         run: ./scripts/download-shacl.sh $shacl_url
       - uses: EndBug/add-and-commit@v9
         with:
-          add: shacl.ttl
+          add: in-shacl/shacl.ttl
           message: "Add SHACL"
       - name: Add AP and SHACL links to README
         run: ./scripts/update-readme.sh $ap_url $shacl_url
@@ -26,8 +26,29 @@ jobs:
         with:
           add: README.md original-README.md
           message: "Add AP and SHACL links to README"
-      - name: "[Placeholder] Generate template Excel"
-        run: echo "Generating Excel template."
+      - name: Check if template Excel exists
+        id: check_template
+        uses: andstor/file-existence-action@v3
+        with:
+          files: "in-shacl/template.xlsx"
+      - name: Clone ap-data-to-dashboard to generate template Excel
+        if: steps.check_template.outputs.files_exists == 'false'
+        uses: actions/checkout@v5
+        with:
+          repository: RMLio/ap-data-to-dashboard
+          path: ap-data-to-dashboard
+      - uses: actions/setup-node@v6
+        if: steps.check_template.outputs.files_exists == 'false'
+        with:
+          node-version: 22
+      - name: "Copy shacl file in-shacl directory"
+        run: |
+          mv in-shacl ap-data-to-dashboard/in-shacl
+      - name: "Install ap-data-in-dashboard"
+        run: ./scripts/install-ap-data-to-dashboard.sh
+      - name: "Generate template Excel"
+        if: steps.check_template.outputs.files_exists == 'false'
+        run: node src/shacl-to-template.js
       - name: Create output directory
         run: mkdir -p output
 
