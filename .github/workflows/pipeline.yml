@@ -48,7 +48,7 @@ jobs:
         run: ./scripts/install-ap-data-to-dashboard.sh
       - name: "Generate template Excel"
         if: steps.check_template.outputs.files_exists == 'false'
-        run: node src/shacl-to-template.js
+        run: cd ap-data-to-dashboard && node src/shacl-to-template.js
       - name: Create output directory
         run: mkdir -p output
 
