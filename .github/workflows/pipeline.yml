@@ -30,7 +30,7 @@ jobs:
         id: check_template
         uses: andstor/file-existence-action@v3
         with:
-          files: "in-shacl/template.xlsx"
+          files: "template.xlsx"
       - name: Clone ap-data-to-dashboard to generate template Excel
         if: steps.check_template.outputs.files_exists == 'false'
         uses: actions/checkout@v5
@@ -47,7 +47,14 @@ jobs:
         run: ./scripts/install-ap-data-to-dashboard.sh
       - name: "Generate template Excel"
         if: steps.check_template.outputs.files_exists == 'false'
-        run: cd ap-data-to-dashboard && node src/shacl-to-template.js
+        run: | 
+          cd ap-data-to-dashboard && node src/shacl-to-template.js
+          cp in-shacl/template.xlsx ../template.xlsx
+      - uses: EndBug/add-and-commit@v9
+        if: steps.check_template.outputs.files_exists == 'false'
+        with:
+          add: template.xlsx
+          message: "Add template Excel"
       - name: Create output directory
         run: mkdir -p output
 
