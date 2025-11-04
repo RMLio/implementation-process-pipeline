@@ -46,7 +46,7 @@ jobs:
           ls in-shacl
           ls ap-data-to-dashboard
           ls ap-data-to-dashboard/in-shacl
-          mv in-shacl ap-data-to-dashboard/
+          cp in-shacl/* ap-data-to-dashboard/in-shacl
           ls ap-data-to-dashboard/in-shacl
       - name: "Install ap-data-in-dashboard"
         run: ./scripts/install-ap-data-to-dashboard.sh
