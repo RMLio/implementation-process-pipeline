@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-DIR=in-shall
+DIR=in-shacl
 FILE="$DIR/shacl.ttl"
 
 if [ -d "DIR" ]; then
