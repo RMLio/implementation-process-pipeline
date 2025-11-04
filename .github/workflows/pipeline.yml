@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ap_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/
-  shacl_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/shacl/leermiddelen-ap-SHACL.ttl
+  shacl_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01/shacl/leermiddelen-SHACL.ttl
   pages_url:
 
 jobs:
@@ -45,16 +45,17 @@ jobs:
         run: cp in-shacl/* ap-data-to-dashboard/in-shacl
       - name: "Install ap-data-in-dashboard"
         run: ./scripts/install-ap-data-to-dashboard.sh
-      - name: "Generate template Excel"
+      - name: "Generate template Excel and template schema"
         if: steps.check_template.outputs.files_exists == 'false'
         run: | 
           cd ap-data-to-dashboard && node src/shacl-to-template.js
           cp in-shacl/template.xlsx ../template.xlsx
+          cp in-shacl/template.schema.json ../in-shacl/template.schema.json
       - uses: EndBug/add-and-commit@v9
         if: steps.check_template.outputs.files_exists == 'false'
         with:
-          add: template.xlsx
-          message: "Add template Excel"
+          add: template.xlsx in-shacl/template.schema.json
+          message: "Add template Excel and template schema"
       - name: Create output directory
         run: mkdir -p output
 

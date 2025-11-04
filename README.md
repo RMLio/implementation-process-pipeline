@@ -3,7 +3,7 @@
 This template repo helps with setting up a pipeline for an OSLO implementation process (implementatietraject).
 
 - [Application profile](https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/)
-- [SHACL](https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/shacl/leermiddelen-ap-SHACL.ttl)
+- [SHACL](https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01/shacl/leermiddelen-SHACL.ttl)
 
 ## Usage
 
