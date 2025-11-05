@@ -41,11 +41,18 @@ You can configure the dashboard via the following steps:
 Note that adding data to this repository makes the data public
 and the data will have [this license](LICENSE).
 
-1. Download the Excel template called `template.xlsx`:
-    1. Browse to [the template in the repository](template.xlsx).
-    2. Download the template by clicking on download icon (with the tooltip "Download raw file") on the right:
+1. Download the Excel template called `template.xlsx` or an Excel file with example data:
+    - Excel template:
+        1. Browse to [the template in the repository](template.xlsx).
+        2. Download the template by clicking on download icon (with the tooltip "Download raw file") on the right:
 
-       ![img.png](img/download-template.png)
+           ![img.png](img/download-template.png)
+    - Excel file with example data:
+        1. Navigate to the [example-data](./example-data) directory.
+        2. Click on one of the Excel files.
+        3. Download the Excel file by clicking on download icon (with the tooltip "Download raw file") on the right:
+
+      ![img.png](img/download-template.png)
 2. Rename the Excel file to something meaningful like the name of your organisation,
    for example, `ugent.xlsx` for Ghent University.
 3. Fill in your data in the Excel file.
