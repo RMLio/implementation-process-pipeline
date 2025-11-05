@@ -113,7 +113,8 @@ jobs:
       - name: Move generated RDF to output directory
         if: steps.check_data.outputs.files_exists == 'true'
         run: |
-          rm -rf output/*
+          rm -rf output
+          mkdir output
           rm -rf mappings
           mkdir mappings
           mv ap-data-to-dashboard/out/serve-me/* output/
