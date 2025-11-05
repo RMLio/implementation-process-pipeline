@@ -42,8 +42,10 @@ jobs:
         with:
           node-version: 22
       - name: "Copy shacl file in-shacl directory"
+        if: steps.check_template.outputs.files_exists == 'false'
         run: cp in-shacl/* ap-data-to-dashboard/in-shacl
       - name: "Install ap-data-in-dashboard"
+        if: steps.check_template.outputs.files_exists == 'false'
         run: ./scripts/install-ap-data-to-dashboard.sh
       - name: "Generate template Excel and template schema"
         if: steps.check_template.outputs.files_exists == 'false'
