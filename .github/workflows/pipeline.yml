@@ -98,5 +98,5 @@ jobs:
         run: mv ap-data-to-dashboard/out/serve-me/* output/
       - uses: EndBug/add-and-commit@v9
         with:
-          add: output/data.ttl docs
+          add: output/* docs
           message: "Add generated RDF and Miravi build"
