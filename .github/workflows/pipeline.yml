@@ -101,6 +101,7 @@ jobs:
           mkdir mappings
           mv ap-data-to-dashboard/out/serve-me/* output/
           mv ap-data-to-dashboard/out/*.rml.ttl mappings/
+          mv ap-data-to-dashboard/out/*.yml mappings/
       - uses: EndBug/add-and-commit@v9
         with:
           add: output/* docs mappings
