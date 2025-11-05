@@ -78,9 +78,8 @@ jobs:
           rm -rf ap-data-to-dashboard/in
           mkdir ap-data-to-dashboard/in
           cp data/* ap-data-to-dashboard/in
-      - name: "Copy shacl file in-shacl directory"
-        run: |
-          cp shacl.ttl ap-data-to-dashboard/in-shacl
+      - name: "Copy in-shacl directory content to ap-data-to-dashboard"
+        run: cp in-shacl/* ap-data-to-dashboard/in-shacl
       - name: "Install ap-data-in-dashboard"
         run: ./scripts/install-ap-data-to-dashboard.sh
       - name: Copy dashboard config
