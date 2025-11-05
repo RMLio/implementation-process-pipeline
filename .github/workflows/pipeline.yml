@@ -95,6 +95,7 @@ jobs:
         if: steps.check_data.outputs.files_exists == 'true'
         run: cp in-shacl/* ap-data-to-dashboard/in-shacl
       - name: "Install ap-data-in-dashboard"
+        if: steps.check_data.outputs.files_exists == 'true'
         run: ./scripts/install-ap-data-to-dashboard.sh
       - name: Copy dashboard config
         if: steps.check_data.outputs.files_exists == 'true'
