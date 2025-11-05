@@ -95,7 +95,9 @@ jobs:
       - name: Move Miravi dist directory to docs
         run: mv ap-data-to-dashboard/node_modules/miravi/main/dist/* docs
       - name: Move generated RDF to output directory
-        run: mv ap-data-to-dashboard/out/serve-me/* output/
+        run: |
+          rm -rf output/*
+          mv ap-data-to-dashboard/out/serve-me/* output/
       - uses: EndBug/add-and-commit@v9
         with:
           add: output/* docs
