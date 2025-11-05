@@ -1,6 +1,0 @@
-# DummySector 
-SELECT DISTINCT ?notation ?label WHERE {
-  ?DummySectorIRI a <http://example.org/DummySector> .
-  OPTIONAL { ?DummySectorIRI <http://www.w3.org/2004/02/skos/core#notation> ?notation . }
-  OPTIONAL { ?DummySectorIRI <http://www.w3.org/2000/01/rdf-schema#label> ?label . }
-}

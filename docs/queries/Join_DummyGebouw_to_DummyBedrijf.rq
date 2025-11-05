@@ -1,6 +1,0 @@
-# Join DummyGebouw to DummyBedrijf
-SELECT DISTINCT ?DummyGebouwIRI ?DummyBedrijfIRI WHERE {
-  ?DummyGebouwIRI a <http://example.org/DummyGebouw> .
-  ?DummyBedrijfIRI a <http://example.org/DummyBedrijf> .
-  ?DummyGebouwIRI <http://example.org/relation/dummybedrijf> ?DummyBedrijfIRI .
-}
