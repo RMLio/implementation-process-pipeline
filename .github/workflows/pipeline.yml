@@ -103,5 +103,5 @@ jobs:
           mv ap-data-to-dashboard/out/*.rml.ttl mappings/
       - uses: EndBug/add-and-commit@v9
         with:
-          add: output/* docs
+          add: output/* docs mappings
           message: "Add generated RDF and Miravi build"
