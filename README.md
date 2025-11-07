@@ -112,4 +112,3 @@ and the data will have [this license](LICENSE).
   ```shell
   ./scripts/reset-repo.sh
   ```
-
