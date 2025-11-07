@@ -106,4 +106,10 @@ and the data will have [this license](LICENSE).
   ./scripts/reset-readme.sh
   ```
 
-- Delete `shacl.ttl` to download the SHACL again.
+- Delete `in-shacl/shacl.ttl` to download the SHACL again.
+- You can reset the whole repo via
+
+  ```shell
+  ./scripts/reset-repo.sh
+  ```
+

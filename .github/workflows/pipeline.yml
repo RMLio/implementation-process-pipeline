@@ -60,8 +60,6 @@ jobs:
         with:
           add: template.xlsx in-shacl/template.schema.json example-data
           message: "Add template Excel, template schema, and example data"
-      - name: Create output directory
-        run: mkdir -p output
 
   Generate-RDF-Build-Miravi:
     runs-on: ubuntu-latest
