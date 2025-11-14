@@ -3,17 +3,16 @@ run-name: ${{ github.actor }} is running the pipeline
 on: [push]
 
 env:
-  ap_url: dfd
-  shacl_url: dfd
+  ap_url:
+  shacl_url:
 
 jobs:
   Set-Up-Repo:
-    if: ${{ ap_url != null && shacl_url != null }}
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
+        if: ${{ ap_url != null && shacl_url != null }}
         uses: actions/checkout@v5
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: Download SHACL if needed
         run: ./scripts/download-shacl.sh $shacl_url
       - uses: EndBug/add-and-commit@v9
