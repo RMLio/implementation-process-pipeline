@@ -3,8 +3,8 @@ run-name: ${{ github.actor }} is running the pipeline
 on: [push]
 
 env:
-  ap_url:
-  shacl_url:
+  ap_url: dfd
+  shacl_url: dfd
 
 jobs:
   Set-Up-Repo:
