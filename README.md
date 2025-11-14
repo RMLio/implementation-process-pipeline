@@ -2,8 +2,8 @@
 
 This template repo helps with setting up a pipeline for an OSLO implementation process (implementatietraject).
 
-- [Application profile](https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/)
-- [SHACL](https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01/shacl/leermiddelen-SHACL.ttl)
+- [Application profile]({{AP-URL}})
+- [SHACL]({{SHACL-URL}})
 
 ## Usage
 
@@ -118,3 +118,11 @@ and the data will have [this license](LICENSE).
   ```shell
   ./scripts/reset-repo.sh
   ```
+ 
+## Example env values
+
+```yaml
+env:
+  ap_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/
+  shacl_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01/shacl/leermiddelen-SHACL.ttl
+```
