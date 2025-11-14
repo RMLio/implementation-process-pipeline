@@ -133,3 +133,4 @@ jobs:
         with:
           add: docs
           message: "Add placeholder in docs"
+          pull: "--rebase"
