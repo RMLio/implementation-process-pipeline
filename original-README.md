@@ -20,10 +20,13 @@ You only have to do these steps once.
 5. Set the link to the SHACL at `env.shacl_url` in the file `.github/workflows/workflow.yml`.
 6. Read and, if necessary, update [the license](LICENSE).
 7. Commit and push your changes to GitHub.
-   This will trigger the workflows, which will use the dummy data in the [data](./data) directory.
+   This will trigger the workflows, which will also add example data to the [example-data](./example-data) directory.
 8. Navigate to Actions and make sure that there are no errors in the workflows.
-9. If everything works, empty the [data](./data) directory.
-10. [Configure the dashboard](#configure-the-dashboard).
+9. Copy the Excel files in the `example-data` directory to the [data](./data) directory.
+10. Once the workflows have finished, the dashboard is available via your GitHub pages.
+11. If everything works, empty the [data](./data) directory.
+    You can now start [adding data](#adding-data-via-an-excel-file).
+12. [Configure the dashboard](#configure-the-dashboard).
 
 ### Configure the dashboard
 
