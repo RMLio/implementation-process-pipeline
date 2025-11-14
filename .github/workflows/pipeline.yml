@@ -63,7 +63,7 @@ jobs:
           cd ap-data-to-dashboard && node src/shacl-to-template.js
           cp in-shacl/template.xlsx ../template.xlsx
           cp in-shacl/template.schema.json ../in-shacl/template.schema.json
-          mkdir ../example-data
+          rm -rf ../example-data && mkdir ../example-data
           cp in-shacl/dummy* ../example-data
       - uses: EndBug/add-and-commit@v9
         if: steps.check_template.outputs.files_exists == 'false' && steps.check_env_temp.outputs.files_exists == 'true'
