@@ -10,3 +10,6 @@ rm -rf example-data \
   docs \
   output \
   template.xlsx
+
+mkdir docs
+cp $SCRIPT_DIR/docs-placeholder.html $SCRIPT_DIR/../docs/index.html
