@@ -9,7 +9,8 @@ rm -rf example-data \
   data \
   docs \
   output \
-  template.xlsx
+  template.xlsx \
+  env.txt
 
 mkdir docs
 cp $SCRIPT_DIR/docs-placeholder.html $SCRIPT_DIR/../docs/index.html
