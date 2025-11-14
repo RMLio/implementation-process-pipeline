@@ -123,3 +123,13 @@ jobs:
         with:
           add: output/* docs mappings
           message: "Add generated RDF and Miravi build"
+      - name: Add placeholder in docs if no data is available
+        if: steps.check_data.outputs.files_exists == 'false'
+        run: |
+          rm -rf docs && mkdir docs
+          echo "We didn't generate a dashboard because there is no data available." > docs/index.html
+      - uses: EndBug/add-and-commit@v9
+        if: steps.check_data.outputs.files_exists == 'true'
+        with:
+          add: docs
+          message: "Add placeholder in docs"
