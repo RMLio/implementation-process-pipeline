@@ -8,7 +8,7 @@ env:
 
 jobs:
   Set-Up-Repo:
-    if: $ap_url != null && $shacl_url != null
+    if: ${{ env.ap_url != null && env.shacl_url != null }}
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
