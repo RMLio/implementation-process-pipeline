@@ -8,7 +8,7 @@ env:
 
 jobs:
   Set-Up-Repo:
-    if: env.ap_url != null && env.shacl_url != null
+    if: ap_url != null && shacl_url != null
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
@@ -62,7 +62,7 @@ jobs:
           message: "Add template Excel, template schema, and example data"
 
   Generate-RDF-Build-Miravi:
-    if: env.ap_url != null && env.shacl_url != null
+    if: ap_url != null && shacl_url != null
     runs-on: ubuntu-latest
     needs: Set-Up-Repo
     steps:
