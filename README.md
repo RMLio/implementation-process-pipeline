@@ -12,21 +12,23 @@ This template repo helps with setting up a pipeline for an OSLO implementation p
 You only have to do these steps once.
 
 1. [Create a new repository based on this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
-2. Navigate to Settings > Actions > General > Workflow permissions and
+   Make sure check the option "Include all branches".
+2. Remove all the data from the `gh-pages` branch.
+3. Navigate to Settings > Actions > General > Workflow permissions and
    make sure that "Read and write permissions" is checked.
-3. [Set up GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
-   and let it point to the `docs` directory on the `main` branch.
-4. Set the link to the application profile at `env.ap_url` in the file `.github/workflows/pipeline.yml`.
-5. Set the link to the SHACL at `env.shacl_url` in the file `.github/workflows/pipeline.yml`.
-6. Read and, if necessary, update [the license](LICENSE).
-7. Commit and push your changes to GitHub.
+4. [Set up GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
+   and let it point to the root directory on the `gh-pages` branch.
+5. Set the link to the application profile at `env.ap_url` in the file `.github/workflows/pipeline.yml`.
+6. Set the link to the SHACL at `env.shacl_url` in the file `.github/workflows/pipeline.yml`.
+7. Read and, if necessary, update [the license](LICENSE).
+8. Commit and push your changes to GitHub.
    This will trigger the workflows, which will also add example data to the [example-data](./example-data) directory.
-8. Navigate to Actions and make sure that there are no errors in the workflows.
-9. Copy the Excel files in the `example-data` directory to the [data](./data) directory.
-10. Once the workflows have finished, the dashboard is available via your GitHub pages.
-11. If everything works, empty the [data](./data) directory.
+9. Navigate to Actions and make sure that there are no errors in the workflows.
+10. Copy the Excel files in the `example-data` directory to the [data](./data) directory.
+11. Once the workflows have finished, the dashboard is available via your GitHub pages.
+12. If everything works, empty the [data](./data) directory.
     You can now start [adding data](#adding-data-via-an-excel-file).
-12. [Configure the dashboard](#configure-the-dashboard).
+13. [Configure the dashboard](#configure-the-dashboard).
 
 ### Configure the dashboard
 
@@ -106,9 +108,14 @@ and the data will have [this license](LICENSE).
 
    ![List of queries on the left of the dashboard](img/select-query.png)
 
-### Working with branches
+### How to work with branches
 
-The pipeline will host the dashboard that is built from the `main` branch at the root of the GitHub pages.
+The `main` branch contains the stable version of the data and dashboard configuration.
+Users need to use other branches and merge requests to update the data or dashboard configuration.
+
+The pipeline uses the `gh-pages` branch to host the different versions of the dashboard.
+It keeps one version per branch.
+It will host the dashboard that is built from the `main` branch at the root of the GitHub pages.
 It will host the dashboards of other branches at `/[branch-name]` of the GitHub pages.
 Forbidden branch names are `assets`, `images`, and `queries`.
 
