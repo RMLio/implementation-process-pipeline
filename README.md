@@ -50,9 +50,10 @@ You only have to do these steps once.
 
 You can configure the dashboard via the following steps:
 
-1. Create a copy of [this directory](https://github.com/RMLio/ap-data-to-dashboard/blob/main/miravi-initial-config/)
+1. [Check](#how-to-work-with-branches) if you are using the correct branch or need to make a new one.
+2. Create a copy of [this directory](https://github.com/RMLio/ap-data-to-dashboard/blob/main/miravi-initial-config/)
    in the root of the repo and rename it to `dashboard-config`.
-2. Update the content of `dashboard-config`.
+3. Update the content of `dashboard-config`.
    You find the options of the dasboard in `dashboard-config/config.json`.
    See [this section](https://github.com/SolidLabResearch/miravi-a-linked-data-viewer?tab=readme-ov-file#configuration-file)
    for more information about the different options.
@@ -65,7 +66,8 @@ You can configure the dashboard via the following steps:
 Note that adding data to this repository makes the data public
 and the data will have [this license](LICENSE).
 
-1. Download the Excel template called `template.xlsx` or an Excel file with example data:
+1. [Check](#how-to-work-with-branches) if you are using the correct branch or need to make a new one.
+2. Download the Excel template called `template.xlsx` or an Excel file with example data:
     - Excel template:
         1. Browse to [the template in the repository](template.xlsx).
         2. Download the template by clicking on download icon (with the tooltip "Download raw file") on the right:
@@ -77,10 +79,10 @@ and the data will have [this license](LICENSE).
         3. Download the Excel file by clicking on download icon (with the tooltip "Download raw file") on the right:
 
       ![img.png](img/download-template.png)
-2. Rename the Excel file to something meaningful like the name of your organisation,
+3. Rename the Excel file to something meaningful like the name of your organisation,
    for example, `ugent.xlsx` for Ghent University.
-3. Fill in your data in the Excel file.
-4. Upload the Excel to the repository.
+4. Fill in your data in the Excel file.
+5. Upload the Excel to the repository.
     1. Navigate to the [data](./data) directory.
     2. Click on "Add file":
 
@@ -108,13 +110,14 @@ and the data will have [this license](LICENSE).
 Note that adding data to this repository makes the data public
 and the data will have [this license](LICENSE).
 
-1. Download the Excel file that you want to update:
+1. [Check](#how-to-work-with-branches) if you are using the correct branch or need to make a new one.
+2. Download the Excel file that you want to update:
     1. Browse to Excel file that you want to update.
     2. Download the template by clicking on download icon (with the tooltip "Download raw file") on the right:
 
        ![img.png](img/download-template.png)
-2. Update the data in the Excel file.
-3. Upload the Excel to the repository via the instructions in
+3. Update the data in the Excel file.
+4. Upload the Excel to the repository via the instructions in
    [step 4 of the section on how to add data via an Excel file](#adding-data-via-an-excel-file).
 
 ### Execute queries via the dashboard
