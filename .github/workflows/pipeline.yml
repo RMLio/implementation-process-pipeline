@@ -113,15 +113,13 @@ jobs:
           cd ap-data-to-dashboard
           ./run.sh -u https://raw.githubusercontent.com/${{ github.repository }}/refs/heads/main/output/
       - name: Clone gh-pages branch of this repo
-        if: steps.check_data.outputs.files_exists == 'true'
         uses: actions/checkout@v5
         with:
           ref: gh-pages
           path: gh-pages
       - uses: actions/setup-node@v6
       - name: Move Miravi dist directory to correct folder in gh-pages
-        if: steps.check_data.outputs.files_exists == 'true'
-        run: ./scripts/move-miravi-dist.sh ${{ github.ref.name }}
+        run: ./scripts/move-miravi-dist.sh ${{ github.ref.name }} ${{ steps.check_data.outputs.files_exists }}
       - name: Move generated RDF to output directory
         if: steps.check_data.outputs.files_exists == 'true'
         run: |
@@ -138,7 +136,6 @@ jobs:
           add: output/* mappings
           message: "Add generated RDF and mappings"
       - uses: EndBug/add-and-commit@v9
-        if: steps.check_data.outputs.files_exists == 'true'
         with:
           cwd: gh-pages
           add: "*"
