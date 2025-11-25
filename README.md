@@ -2,8 +2,8 @@
 
 This template repo helps with setting up a pipeline for an OSLO implementation process (implementatietraject).
 
-- [Application profile](https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/)
-- [SHACL](https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01/shacl/leermiddelen-SHACL.ttl)
+- [Application profile]({{AP-URL}})
+- [SHACL]({{SHACL-URL}})
 
 ## Usage
 
@@ -105,6 +105,12 @@ and the data will have [this license](LICENSE).
 2. Click on one of the queries on the left:
 
    ![List of queries on the left of the dashboard](img/select-query.png)
+
+### Working with branches
+
+The pipeline will host the dashboard that is built from the `main` branch at the root of the GitHub pages.
+It will host the dashboards of other branches at `/[branch-name]` of the GitHub pages.
+Forbidden branch names are `assets`, `images`, and `queries`.
 
 ## Extras
 

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+FORBIDDEN_BRANCH_NAMES=("assets" "queries" "images")
 CURRENT_BRANCH=$1
 USE_DIST=$2
 
@@ -7,6 +8,9 @@ USE_DIST=$2
 CURRENT_BRANCH=${CURRENT_BRANCH//\//-}
 
 echo $CURRENT_BRANCH
+
+# Check if branch name is forbidden.
+[[ " ${FORBIDDEN_BRANCH_NAMES[*]} " =~ [[:space:]]${CURRENT_BRANCH}[[:space:]] ]] && echo "Branch name is forbidden!" && exit 1
 
 if [[ "$CURRENT_BRANCH" == "main" ]]; then
   echo "Not using subdirectory because branch is main."
