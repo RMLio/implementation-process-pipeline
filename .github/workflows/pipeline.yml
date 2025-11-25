@@ -112,12 +112,16 @@ jobs:
         run: |
           cd ap-data-to-dashboard
           ./run.sh -u https://raw.githubusercontent.com/${{ github.repository }}/refs/heads/main/output/
-      - name: Clean docs directory
+      - name: Clone gh-pages branch of this repo
         if: steps.check_data.outputs.files_exists == 'true'
-        run: rm -rf docs && mkdir docs
-      - name: Move Miravi dist directory to docs
+        uses: actions/checkout@v5
+        with:
+          ref: gh-pages
+          path: gh-pages
+      - uses: actions/setup-node@v6
+      - name: Move Miravi dist directory to correct folder in gh-pages
         if: steps.check_data.outputs.files_exists == 'true'
-        run: mv ap-data-to-dashboard/node_modules/miravi/main/dist/* docs
+        run: ./scripts/move-miravi-dist.sh ${{ github.ref.name }}
       - name: Move generated RDF to output directory
         if: steps.check_data.outputs.files_exists == 'true'
         run: |
@@ -131,5 +135,11 @@ jobs:
       - uses: EndBug/add-and-commit@v9
         if: steps.check_data.outputs.files_exists == 'true'
         with:
-          add: output/* docs mappings
-          message: "Add generated RDF and Miravi build"
+          add: output/* mappings
+          message: "Add generated RDF and mappings"
+      - uses: EndBug/add-and-commit@v9
+        if: steps.check_data.outputs.files_exists == 'true'
+        with:
+          cwd: gh-pages
+          add: *
+          message: "Add Miravi build coming from branch ${{ github.ref.name }}"

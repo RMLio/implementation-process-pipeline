@@ -3,7 +3,7 @@
 DIR=in-shacl
 FILE="$DIR/shacl.ttl"
 
-if [ -d "DIR" ]; then
+if [ -d "$DIR" ]; then
   echo "DIR already exists."
 else
   mkdir $DIR
