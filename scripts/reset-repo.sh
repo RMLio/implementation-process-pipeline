@@ -7,13 +7,9 @@ rm -rf example-data \
   mappings \
   in-shacl \
   data \
-  docs \
   output \
   template.xlsx \
   env.txt
-
-mkdir docs
-cp $SCRIPT_DIR/docs-placeholder.html $SCRIPT_DIR/../docs/index.html
 
 mkdir data
 touch data/.gitkeep
