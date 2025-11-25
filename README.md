@@ -5,6 +5,22 @@ This template repo helps with setting up a pipeline for an OSLO implementation p
 - [Application profile]({{AP-URL}})
 - [SHACL]({{SHACL-URL}})
 
+## Table of contents
+
+<!-- TOC -->
+* [Implementation process pipeline](#implementation-process-pipeline)
+  * [Table of contents](#table-of-contents)
+  * [Usage](#usage)
+    * [Setting up this repository](#setting-up-this-repository)
+    * [Configure the dashboard](#configure-the-dashboard)
+    * [Adding data via an Excel file](#adding-data-via-an-excel-file)
+    * [Updating data in an Excel file](#updating-data-in-an-excel-file)
+    * [Execute queries via the dashboard](#execute-queries-via-the-dashboard)
+    * [How to work with branches](#how-to-work-with-branches)
+    * [How to host the dashboard on your own server](#how-to-host-the-dashboard-on-your-own-server)
+  * [Extras](#extras)
+<!-- TOC -->
+
 ## Usage
 
 ### Setting up this repository
@@ -118,6 +134,20 @@ It keeps one version per branch.
 It will host the dashboard that is built from the `main` branch at the root of the GitHub pages.
 It will host the dashboards of other branches at `/[branch-name]` of the GitHub pages.
 Forbidden branch names are `assets`, `images`, and `queries`.
+
+### How to host the dashboard on your own server
+
+You can host the dashboard on your own server 
+by copying the static files from the `gh-pages` branch to your own server:
+
+1. Navigate to the `gh-pages` branch.
+2. Do you want to the host the dashboard built from the `main` branch or another branch?
+   - If from the `main` branch, download the file `index.html` and the directories `assets`, `images`, and `queries`.
+   - If from another branch, download the directory with the same name as the branch.
+3. Copy the files and directories to your server and 
+   follow the server-specific instructions on how to host them.
+
+Note that the dashboard will still rely on the RDF in this repository.
 
 ## Extras
 
