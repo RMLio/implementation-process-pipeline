@@ -119,7 +119,7 @@ jobs:
           path: gh-pages
       - uses: actions/setup-node@v6
       - name: Move Miravi dist directory to correct folder in gh-pages
-        run: ./scripts/move-miravi-dist.sh ${{ github.ref.name }} ${{ steps.check_data.outputs.files_exists }}
+        run: ./scripts/move-miravi-dist.sh ${{ github.ref_name }} ${{ steps.check_data.outputs.files_exists }}
       - name: Move generated RDF to output directory
         if: steps.check_data.outputs.files_exists == 'true'
         run: |

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-CURRENT_BRANCH=$0
-USE_DIST=$1
+CURRENT_BRANCH=$1
+USE_DIST=$2
 
 echo $CURRENT_BRANCH
 echo $USE_DIST
