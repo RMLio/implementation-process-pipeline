@@ -141,5 +141,5 @@ jobs:
         if: steps.check_data.outputs.files_exists == 'true'
         with:
           cwd: gh-pages
-          add: *
+          add: "*"
           message: "Add Miravi build coming from branch ${{ github.ref.name }}"
