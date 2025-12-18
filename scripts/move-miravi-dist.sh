@@ -3,6 +3,7 @@
 FORBIDDEN_BRANCH_NAMES=("assets" "queries" "images")
 CURRENT_BRANCH=$1
 USE_DIST=$2
+WORKDIR="dist"
 
 # Sanitize branch
 CURRENT_BRANCH=${CURRENT_BRANCH//\//-}
@@ -17,7 +18,7 @@ if [[ "$CURRENT_BRANCH" == "main" ]]; then
   rm -rf gh-pages/assets gh-pages/images gh-pages/queries
 
   if [[ "$USE_DIST" == "true" ]]; then
-    mv ap-data-to-dashboard/node_modules/miravi/main/dist/* gh-pages
+    mv $WORKDIR/ap-data-to-dashboard/node_modules/miravi/main/dist/* gh-pages
   else
     cp scripts/dashboard-placeholder.html gh-pages/index.html
   fi
@@ -27,7 +28,7 @@ else
   mkdir -p gh-pages/$CURRENT_BRANCH
 
   if [[ "$USE_DIST" == "true" ]]; then
-    mv ap-data-to-dashboard/node_modules/miravi/main/dist/* gh-pages/$CURRENT_BRANCH
+    mv $WORKDIR/ap-data-to-dashboard/node_modules/miravi/main/dist/* gh-pages/$CURRENT_BRANCH
   else
     cp scripts/dashboard-placeholder.html gh-pages/$CURRENT_BRANCH/index.html
   fi

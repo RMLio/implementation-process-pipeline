@@ -168,10 +168,15 @@ Note that the dashboard will still rely on the RDF in this repository.
   ./scripts/reset-repo.sh
   ```
 
-- Some example env values are
+- Some example values for `urls.env` are
 
    ```yaml
-   env:
-     ap_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/
-     shacl_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01/shacl/leermiddelen-SHACL.ttl
+   AP=https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/
+   SHACL=https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01/shacl/leermiddelen-SHACL.ttl
+   ```
+
+- You can run the pipeline locally via
+
+   ```bash
+   ./scripts/run-pipeline-locally.sh
    ```
