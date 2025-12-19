@@ -32,6 +32,9 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          ref: main
       - name: Check if there is any data available
         id: check_data
         uses: andstor/file-existence-action@v3
@@ -50,6 +53,7 @@ jobs:
           ref: gh-pages
           path: gh-pages
       - name: Move Miravi dist directory to correct folder in gh-pages
+        if: steps.check_data.outputs.files_exists == 'true'
         run: ./scripts/move-miravi-dist.sh ${{ github.ref_name }} ${{ steps.check_data.outputs.files_exists }}
       - name: Move output and mappings to root of repo
         run: |
