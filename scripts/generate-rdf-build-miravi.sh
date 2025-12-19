@@ -32,10 +32,6 @@ cd ap-data-to-dashboard
 ./run.sh -u $BASE_URL
 cd $OUTPUT_DIR
 
-echo "Moving Miravi dist to docs"
-rm -rf docs && mkdir docs
-mv $WORK_DIR/ap-data-to-dashboard/node_modules/miravi/main/dist/* docs
-
 echo "Moving RDF and mappings"
 rm -rf output
 mkdir output
