@@ -21,7 +21,7 @@ if [[ "$CURRENT_BRANCH" == "main" ]]; then
   if [[ "$USE_DIST" == "true" ]]; then
     mv $WORK_DIR/ap-data-to-dashboard/node_modules/miravi/main/dist/* gh-pages
   else
-    cp scripts/dashboard-placeholder.html gh-pages/index.html
+    cp $SCRIPTS_DIR/dashboard-placeholder.html gh-pages/index.html
   fi
 else
   echo "Using subdirectory because branch is not main."
@@ -31,6 +31,6 @@ else
   if [[ "$USE_DIST" == "true" ]]; then
     mv $WORK_DIR/ap-data-to-dashboard/node_modules/miravi/main/dist/* gh-pages/$CURRENT_BRANCH
   else
-    cp scripts/dashboard-placeholder.html gh-pages/$CURRENT_BRANCH/index.html
+    cp $SCRIPTS_DIR/dashboard-placeholder.html gh-pages/$CURRENT_BRANCH/index.html
   fi
 fi
