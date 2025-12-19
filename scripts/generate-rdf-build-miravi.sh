@@ -28,7 +28,7 @@ echo "Copying dashboard config"
 $SCRIPTS_DIR/copy-dashboard-config.sh
 
 echo "Running ap-data-to-dashboard"
-cd ap-data-to-dashboard
+cd $WORK_DIR/ap-data-to-dashboard
 ./run.sh -u $BASE_URL
 cd $OUTPUT_DIR
 

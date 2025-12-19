@@ -4,4 +4,4 @@
 - `set-up-repo.sh`: this script sets up the repo, including downloading the SHACL file, generating a template Excel file,
    and generating example data.
 - `generate-rdf-build-miravi-locally.sh`: this script generates the RDF and builds Miravi locally.
-   It relies on the `generate-rdf-build-miravi.sh`.
+   It relies on `generate-rdf-build-miravi.sh`.
