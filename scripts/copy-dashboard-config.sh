@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-DIRECTORY=dashboard-config
+DIRECTORY="../dashboard-config"
 
 if [ -d "$DIRECTORY" ]; then
   echo "$DIRECTORY exists."

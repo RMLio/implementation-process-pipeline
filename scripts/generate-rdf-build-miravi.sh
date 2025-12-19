@@ -1,49 +1,46 @@
 #!/usr/bin/env bash
 
-WORKDIR="dist"
+SCRIPTS_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+ROOT_DIR=`pwd`
+WORK_DIR=$ROOT_DIR"/tmp"
+OUTPUT_DIR=$ROOT_DIR/"dist"
 BASE_URL=$1
 
-rm -rf $WORKDIR
-mkdir $WORKDIR
+mkdir -p $WORK_DIR
+rm -rf $OUTPUT_DIR
+mkdir $OUTPUT_DIR
 
-cd $WORKDIR
-
-echo "Cloning ap-data-to-dashboard"
-git clone --revision=2bb5bd334f8d708d1e337eb7c4a9251856c636d1 --depth 1 https://github.com/RMLio/ap-data-to-dashboard.git ap-data-to-dashboard
+cd $WORK_DIR
+$SCRIPTS_DIR/clone-ap-data-to-dashboard.sh || exit 1
 rm -rf ap-data-to-dashboard/in
 mkdir ap-data-to-dashboard/in
 
 echo "Copying ../data/* to ap-data-to-dashboard/in"
-cp ../data/* ap-data-to-dashboard/in
+cp $ROOT_DIR/data/* ap-data-to-dashboard/in
 
 echo "Copying ../in-shacl/* to ap-data-to-dashboard/in-shacl"
-cp ../in-shacl/* ap-data-to-dashboard/in-shacl
+cp $ROOT_DIR/in-shacl/* ap-data-to-dashboard/in-shacl
 
 echo "Installing ap-data-to-dashboard"
-cd ap-data-to-dashboard
-npm i
-npm run setup
-cd ..
+$SCRIPTS_DIR/install-ap-data-to-dashboard.sh
 
 echo "Copying dashboard config"
-rm -rf ap-data-to-dashboard/miravi-initial-config
-mkdir ap-data-to-dashboard/miravi-initial-config
-cp -r ../dashboard-config/* ap-data-to-dashboard/miravi-initial-config
+$SCRIPTS_DIR/copy-dashboard-config.sh
 
 echo "Running ap-data-to-dashboard"
 cd ap-data-to-dashboard
 ./run.sh -u $BASE_URL
-cd ..
+cd $OUTPUT_DIR
 
 echo "Moving Miravi dist to docs"
 rm -rf docs && mkdir docs
-mv ap-data-to-dashboard/node_modules/miravi/main/dist/* docs
+mv $WORK_DIR/ap-data-to-dashboard/node_modules/miravi/main/dist/* docs
 
 echo "Moving RDF and mappings"
 rm -rf output
 mkdir output
 rm -rf mappings
 mkdir mappings
-mv ap-data-to-dashboard/out/serve-me/* output/
-mv ap-data-to-dashboard/out/*.rml.ttl mappings/
-mv ap-data-to-dashboard/out/*.yml mappings/
+mv $WORK_DIR/ap-data-to-dashboard/out/serve-me/* output/
+mv $WORK_DIR/ap-data-to-dashboard/out/*.rml.ttl mappings/
+mv $WORK_DIR/ap-data-to-dashboard/out/*.yml mappings/

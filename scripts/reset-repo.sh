@@ -9,7 +9,8 @@ rm -rf example-data \
   data \
   output \
   template.xlsx \
-  dist
+  dist \
+  tmp
 
 mkdir data
 touch data/.gitkeep
