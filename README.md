@@ -75,13 +75,13 @@ You only have to do these steps once.
 9. Host the RDF files via
 
    ```shell
-   npx http-server $OUTPUT_DIR/output -p 5500 --cors
+   npx http-server dist/output -p 5500 --cors
    ```
 
 10. Host the dashboard via
 
     ```shell
-    npx http-server $OUTPUT_DIR/docs -p 8080
+    npx http-server dist/docs -p 8080
     ```
 
 11. Browse to <http://localhost:8080>.
