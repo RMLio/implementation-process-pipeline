@@ -9,7 +9,10 @@ rm -rf example-data \
   data \
   output \
   template.xlsx \
-  env.txt
+  dist \
+  tmp
 
 mkdir data
 touch data/.gitkeep
+echo "AP_URL=" > urls.env
+echo "SHACL_URL=" >> urls.env

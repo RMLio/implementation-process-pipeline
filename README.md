@@ -11,7 +11,8 @@ This template repo helps with setting up a pipeline for an OSLO implementation p
 - [Implementation process pipeline](#implementation-process-pipeline)
   - [Table of contents](#table-of-contents)
   - [Usage](#usage)
-    - [Setting up this repository](#setting-up-this-repository)
+    - [Setting up this repository with GitHub Actions and Pages](#setting-up-this-repository-with-github-actions-and-pages)
+    - [Setting up this repository for local execution](#setting-up-this-repository-for-local-execution)
     - [Configure the dashboard](#configure-the-dashboard)
     - [Adding data via an Excel file](#adding-data-via-an-excel-file)
     - [Updating data in an Excel file](#updating-data-in-an-excel-file)
@@ -23,19 +24,19 @@ This template repo helps with setting up a pipeline for an OSLO implementation p
 
 ## Usage
 
-### Setting up this repository
+### Setting up this repository with GitHub Actions and Pages
 
 You only have to do these steps once.
 
 1. [Create a new repository based on this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
-   Make sure check the option "Include all branches".
+   Make sure to check the option "Include all branches".
 2. Remove all the data from the `gh-pages` branch.
 3. Navigate to Settings > Actions > General > Workflow permissions and
    make sure that "Read and write permissions" is checked.
 4. [Set up GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
    and let it point to the root directory on the `gh-pages` branch.
-5. Set the link to the application profile at `env.ap_url` in the file `.github/workflows/pipeline.yml`.
-6. Set the link to the SHACL at `env.shacl_url` in the file `.github/workflows/pipeline.yml`.
+5. Set the link to the application profile as value for `AP_URL` in the file `urls.env`.
+6. Set the link to the SHACL as value for `SHACL_URL` in the file `urls.env`.
 7. Read and, if necessary, update [the license](LICENSE).
 8. Commit and push your changes to GitHub.
    This will trigger the workflows, which will also add example data to the [example-data](./example-data) directory.
@@ -43,7 +44,49 @@ You only have to do these steps once.
 10. Copy the Excel files in the `example-data` directory to the [data](./data) directory.
 11. Once the workflows have finished, the dashboard is available via your GitHub pages.
 12. If everything works, empty the [data](./data) directory.
-    You can now start [adding data](#adding-data-via-an-excel-file).
+    You can now start [adding your own data](#adding-data-via-an-excel-file).
+13. [Configure the dashboard](#configure-the-dashboard).
+
+### Setting up this repository for local execution
+
+You only have to do these steps once.
+
+1. [Create a new repository based on this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+   Make sure to check the option "Include all branches".
+2. Remove all the data from the `gh-pages` branch.
+3. Set the link to the application profile as value for `AP_URL` in the file `urls.env`.
+4. Set the link to the SHACL as value for `SHACL_URL` in the file `urls.env`.
+5. Read and, if necessary, update [the license](LICENSE).
+6. Run the pipeline locally via
+
+   ```bash
+   ./scripts/run-pipeline-locally.sh
+   ```
+
+   This script will finish with an error message saying that it didn't find any data,
+   which is what we expect considering we didn't add any data yet.
+7. Copy the Excel files in the `example-data` directory to the [data](./data) directory.
+8. Run the pipeline again via
+
+   ```bash
+   ./scripts/run-pipeline-locally.sh
+   ```
+
+9. Host the RDF files via
+
+   ```shell
+   npx http-server dist/output -p 5500 --cors
+   ```
+
+10. Host the dashboard via
+
+    ```shell
+    npx http-server dist/docs -p 8080
+    ```
+
+11. Browse to <http://localhost:8080>.
+12. If everything works, empty the [data](./data) directory.
+    You can now start [adding your own data](#adding-data-via-an-excel-file).
 13. [Configure the dashboard](#configure-the-dashboard).
 
 ### Configure the dashboard
@@ -168,10 +211,15 @@ Note that the dashboard will still rely on the RDF in this repository.
   ./scripts/reset-repo.sh
   ```
 
-- Some example env values are
+- Some example values for `urls.env` are
 
    ```yaml
-   env:
-     ap_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/
-     shacl_url: https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01/shacl/leermiddelen-SHACL.ttl
+   AP_URL=https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/ontwerpstandaard/2025-03-21/
+   SHACL_URL=https://data.vlaanderen.be/doc/applicatieprofiel/leermiddelen/kandidaatstandaard/2025-08-01/shacl/leermiddelen-SHACL.ttl
+   ```
+
+- You can run the pipeline locally via
+
+   ```bash
+   ./scripts/run-pipeline-locally.sh
    ```
