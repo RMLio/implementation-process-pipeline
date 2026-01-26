@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [3.0.0] - 2026-01-26
+
 ### Added
 
 - Script to run pipeline locally
@@ -30,5 +32,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Release v1.0.0
 
+[3.0.0]: https://github.com/RMLio/implementation-process-pipeline/compare/vv2.0.0...v3.0.0
 [v2.0.0]: https://github.com/RMLio/implementation-process-pipeline/compare/v1.0.0...v2.0.0
 [v1.0.0]: https://github.com/RMLio/implementation-process-pipeline/releases/tag/v1.0.0
